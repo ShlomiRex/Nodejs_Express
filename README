@@ -1,0 +1,7 @@
+nodemon = package that monitor changes in the project and don't need to restart the nodejs server over again to see changes.
+To run with windows:
+npm run start-watch
+
+package.json file contains scripts (like test and start-watch)
+it also contains dependencies
+and also devDependencies which is only installed on debug mode; on release mode, don't install. (automatically)
