@@ -1,0 +1,19 @@
+const express = require("express");
+const router = express.Router();
+
+router.get("/", (req, res, next) => {
+    res.status(200);
+    res.json({
+        message: "Handling GET request to /products"
+    });
+});
+
+router.post("/", (req, res, next) => {
+    res.status(200);
+    res.json({
+        message: "Handling POST request to /products"
+    });
+});
+
+
+module.exports = router;

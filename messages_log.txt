@@ -1,0 +1,8 @@
+Shlomi:My name is shlomi
+Diana:My name is diana
+qwerty:asd
+qwerty:asd
+:asd
+qwert:qwert
+qwert:qwert
+Hello world:HI SHLOMI
