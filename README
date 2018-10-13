@@ -1,7 +1,28 @@
 nodemon = package that monitor changes in the project and don't need to restart the nodejs server over again to see changes.
-To run with windows:
+To run:
 npm run start-watch
 
 package.json file contains scripts (like test and start-watch)
 it also contains dependencies
 and also devDependencies which is only installed on debug mode; on release mode, don't install. (automatically)
+
+
+
+##############################################################################################
+                                    Firebase
+##############################################################################################
+How to update my firebase website / How to test changes before deploying website?
+https://stackoverflow.com/questions/40254475/how-to-update-a-file-that-i-deployed-to-firebase-hosting/40263930#40263930
+
+
+My website is: 
+https://my-website-e61fe.firebaseapp.com/
+
+
+$ firebase serve
+That saved the current directory and creates temporary local website that you can view.
+It is recommended before using 
+$ firebase deploy
+because it uploads the entire folder.
+
+##############################################################################################

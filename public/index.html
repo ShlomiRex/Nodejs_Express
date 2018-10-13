@@ -32,12 +32,19 @@
 			<input type="text" name="message">
 			<br><br>
 			<input type="submit" value="Submit">
+			<fieldset>
+				<legend>Comments</legend>
+				<input id="myFile" type="file">
+				<textarea id="myTextArea" rows="4" cols="20">
+				</textarea>
+			</fieldset>
+			
 		</fieldset>
 	</form> 
-
-	<textarea>
-		This will be messages
-	</textarea>
+	<script>
+		var file = document.getElementById("myFile").files[0];
+		
+	</script>
 
 	<div id="footer"></div>
 </body>
