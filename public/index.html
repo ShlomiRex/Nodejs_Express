@@ -4,8 +4,6 @@
 	Shlomi's Website
 	</title>
 	
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-
 	<script
 		src="https://code.jquery.com/jquery-3.3.1.js"
 		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -32,18 +30,26 @@
 			<input type="text" name="message">
 			<br><br>
 			<input type="submit" value="Submit">
-			<fieldset>
+		</fieldset>
+
+
+		<fieldset>
 				<legend>Comments</legend>
-				<input id="myFile" type="file">
-				<textarea id="myTextArea" rows="4" cols="20">
+				<textarea id="textarea_comments">
 				</textarea>
-			</fieldset>
-			
 		</fieldset>
 	</form> 
 	<script>
-		var file = document.getElementById("myFile").files[0];
-		
+		$(document).ready(function() {
+			$.getJSON("/get_messages", function(data) {
+				data.forEach(function(arrItem) {
+					var tmp = arrItem.user + " : " + arrItem.message + "\n";
+					console.log("Comment: " + tmp);
+					$("#textarea_comments").append(tmp);
+				});
+				
+			});
+		});
 	</script>
 
 	<div id="footer"></div>
