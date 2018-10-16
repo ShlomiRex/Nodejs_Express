@@ -1,22 +1,18 @@
-let express  = require("express");
-let app = express();
-var mongoClient = require('mongodb').MongoClient;
-var $ = require("jquery");
+const express  = require("express");
+const app = express();
+const $ = require("jquery");
+const mongoose = require("mongoose"); 
+const db_module = require("./db");
+const MongoClient = require('mongodb').MongoClient;
+    
 
-
-
-const mongodb_uri = "mongodb+srv://Admin:Admin@cluster0.mongodb.net";
-const mongodb_comments_db = "mywebsite";
-const mongodb_comments_collection = "global_comments";
-
-
-function send_message(user, message) {
+function send_comment(user, message) {
     // Connect to the db
-    mongoClient.connect(mongodb_uri, (err, db) => {
+    MongoClient.connect(db_module.uri_atlas, (err, db) => {
         if(err) 
             throw err;
-        let mywebsite_db = db.db(mongodb_comments_db);
-        let global_messages_collection = mywebsite_db.collection(mongodb_comments_collection);
+        let mywebsite_db = db.db(db_module.db_mywebsite);
+        let global_messages_collection = mywebsite_db.collection(db_module.collection_global_comments);
         let doc = {user: user, message: message};
         global_messages_collection.insertOne(doc, (err, res)=>{
             if(err) 
@@ -25,6 +21,19 @@ function send_message(user, message) {
             db.close();
         });
 
+    });
+}
+
+function recv_comments(response) {
+    // Connect to the db
+    MongoClient.connect(db_module.uri_atlas, (err, db) => {
+        if(err) 
+            throw err;
+        let mywebsite_db = db.db(db_module.db_mywebsite);
+        let global_messages_collection = mywebsite_db.collection(db_module.collection_global_comments);
+        global_messages_collection.find().toArray((error, result) => {
+            response.json(result);
+        });
     });
 }
 
@@ -49,15 +58,7 @@ app.get('/send_global_message', function (req, res) {
 });
 
 app.get("/get_messages", (req, res) => {
-    mongoClient.connect(mongodb_uri, (err, db) => {
-        if(err) 
-            throw err;
-        let mywebsite_db = db.db(mongodb_comments_db);
-        let global_messages_collection = mywebsite_db.collection("global_messages");
-        let messages = global_messages_collection.find().limit(10).toArray((error, result) => {
-            res.json(result);
-        });
-    });
+    recv_comments(res);
 });
 
 

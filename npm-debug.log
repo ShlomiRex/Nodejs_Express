@@ -1,0 +1,2251 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData firebase
+20 silly mapToRegistry name firebase
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/firebase
+24 silly fetchNamedPackageData mongodb
+25 silly mapToRegistry name mongodb
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+29 verbose request uri https://registry.npmjs.org/mongodb
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 10:28:45 AM
+32 verbose request id f2e30d08e1390d2a
+33 verbose etag W/"a24cbbd44402169bac15d46fed7cbe22"
+34 verbose lastModified Wed, 10 Oct 2018 22:30:20 GMT
+35 http request GET https://registry.npmjs.org/mongodb
+36 verbose request uri https://registry.npmjs.org/firebase
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 10:28:45 AM
+39 verbose etag W/"82a475b5a8d3ed15dc61d441eb7567d9"
+40 verbose lastModified Thu, 11 Oct 2018 22:40:09 GMT
+41 http request GET https://registry.npmjs.org/firebase
+42 http 304 https://registry.npmjs.org/mongodb
+43 verbose headers { date: 'Tue, 16 Oct 2018 07:28:46 GMT',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'set-cookie':
+43 verbose headers    [ '__cfduid=df0043b9bb0a057c9ff70ac213f7a51441539674926; expires=Wed, 16-Oct-19 07:28:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+43 verbose headers   'cf-cache-status': 'HIT',
+43 verbose headers   'cache-control': 'max-age=300',
+43 verbose headers   'cf-ray': '46a8cf8129a6ad81-TLV',
+43 verbose headers   etag: '"a24cbbd44402169bac15d46fed7cbe22"',
+43 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+43 verbose headers   'last-modified': 'Wed, 10 Oct 2018 22:30:20 GMT',
+43 verbose headers   vary: 'accept-encoding, accept',
+43 verbose headers   'x-amz-meta-rev': '1815-68ee76e5dc8cc6aa6bab852f8ec1f18c',
+43 verbose headers   server: 'cloudflare' }
+44 silly get cb [ 304,
+44 silly get   { date: 'Tue, 16 Oct 2018 07:28:46 GMT',
+44 silly get     connection: 'keep-alive',
+44 silly get     'set-cookie':
+44 silly get      [ '__cfduid=df0043b9bb0a057c9ff70ac213f7a51441539674926; expires=Wed, 16-Oct-19 07:28:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+44 silly get     'cf-cache-status': 'HIT',
+44 silly get     'cache-control': 'max-age=300',
+44 silly get     'cf-ray': '46a8cf8129a6ad81-TLV',
+44 silly get     etag: '"a24cbbd44402169bac15d46fed7cbe22"',
+44 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+44 silly get     'last-modified': 'Wed, 10 Oct 2018 22:30:20 GMT',
+44 silly get     vary: 'accept-encoding, accept',
+44 silly get     'x-amz-meta-rev': '1815-68ee76e5dc8cc6aa6bab852f8ec1f18c',
+44 silly get     server: 'cloudflare' } ]
+45 verbose etag https://registry.npmjs.org/mongodb from cache
+46 verbose get saving mongodb to /home/shlomi/.npm/registry.npmjs.org/mongodb/.cache.json
+47 silly fetchPackageMetaData Error: No compatible version found: mongodb@^3.6.0
+47 silly fetchPackageMetaData Valid install targets:
+47 silly fetchPackageMetaData 3.1.8, 3.1.7, 3.1.6, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.1.0-beta4, 3.1.0-beta3, 3.1.0-beta2, 3.1.0-beta1, 3.0.11, 3.0.10, 3.0.9, 3.0.8, 3.0.7, 3.0.6, 3.0.5, 3.0.4, 3.0.3, 3.0.2, 3.0.1, 3.0.0, 3.0.0-rc0, 2.2.36, 2.2.35, 2.2.34, 2.2.33, 2.2.32, 2.2.31, 2.2.30, 2.2.29, 2.2.28, 2.2.27, 2.2.26, 2.2.25, 2.2.24, 2.2.23, 2.2.22, 2.2.21, 2.2.20, 2.2.19, 2.2.18, 2.2.17, 2.2.16, 2.2.15, 2.2.14, 2.2.13, 2.2.12, 2.2.11, 2.2.10, 2.2.9, 2.2.8, 2.2.7, 2.2.6, 2.2.5, 2.2.4, 2.2.3, 2.2.2, 2.2.1, 2.2.0, 2.2.0-alpha2, 2.2.0-alpha1, 2.1.22-alpha4, 2.1.22-alpha3, 2.1.22-alpha2, 2.1.22-alpha, 2.1.21, 2.1.20, 2.1.19, 2.1.18, 2.1.17, 2.1.16, 2.1.15, 2.1.14, 2.1.13, 2.1.12, 2.1.11, 2.1.10, 2.1.9, 2.1.8, 2.1.7, 2.1.6, 2.1.5, 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.1.0-rc1, 2.1.0-alpha, 2.0.55, 2.0.54, 2.0.53, 2.0.52, 2.0.51, 2.0.50, 2.0.49, 2.0.48, 2.0.47, 2.0.46, 2.0.45, 2.0.44, 2.0.43, 2.0.42, 2.0.41, 2.0.40, 2.0.39, 2.0.38, 2.0.37, 2.0.36, 2.0.35, 2.0.34, 2.0.33, 2.0.32, 2.0.31, 2.0.30, 2.0.29, 2.0.28, 2.0.27, 2.0.26, 2.0.25, 2.0.24, 2.0.23, 2.0.22, 2.0.21, 2.0.20, 2.0.19, 2.0.18, 2.0.17, 2.0.16, 2.0.15, 2.0.14, 2.0.13, 2.0.12, 2.0.11, 2.0.10, 2.0.9, 2.0.8, 2.0.7, 2.0.6, 2.0.5, 2.0.4, 2.0.3, 2.0.2, 2.0.1, 2.0.0, 2.0.0-alpha2, 2.0.0-alpha1, 1.4.40, 1.4.39, 1.4.38, 1.4.37, 1.4.36, 1.4.35, 1.4.34, 1.4.33, 1.4.32, 1.4.31, 1.4.30, 1.4.29, 1.4.28, 1.4.27, 1.4.26, 1.4.25, 1.4.24, 1.4.23, 1.4.22, 1.4.20, 1.4.19, 1.4.18, 1.4.17, 1.4.16, 1.4.15, 1.4.14, 1.4.12, 1.4.11, 1.4.10, 1.4.9, 1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.4.0-rc9, 1.4.0-rc8, 1.4.0-rc7, 1.4.0-rc6, 1.4.0-rc5, 1.4.0-rc4, 1.4.0-rc3, 1.4.0-rc2, 1.4.0-rc10, 1.3.23, 1.3.22, 1.3.21, 1.3.20, 1.3.19, 1.3.18, 1.3.17, 1.3.15, 1.3.14, 1.3.12, 1.3.11, 1.3.10, 1.3.9, 1.3.8, 1.3.7, 1.3.6, 1.3.5, 1.3.4, 1.3.3, 1.3.2, 1.3.1, 1.3.0, 1.2.14, 1.2.13, 1.2.12, 1.2.11, 1.2.10, 1.2.9, 1.2.8, 1.2.7, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.11, 1.1.10, 1.1.9, 1.1.8, 1.1.7, 1.1.6, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.1.0-beta, 1.0.2, 1.0.1, 1.0.0, 0.9.9, 0.9.9-8, 0.9.9-7, 0.9.9-6, 0.9.9-5, 0.9.9-4, 0.9.9-3, 0.9.9-2, 0.9.9-1, 0.9.8, 0.9.8-7, 0.9.8-6, 0.9.8-5, 0.9.8-4, 0.9.8-3, 0.9.8-2, 0.9.8-1, 0.9.7, 0.9.7-3-5, 0.9.7-3-4, 0.9.7-3-3, 0.9.7-3-2, 0.9.7-3-1, 0.9.7-2-5, 0.9.7-2-4, 0.9.7-2-3, 0.9.7-2-2, 0.9.7-2-1, 0.9.7-3, 0.9.7-2, 0.9.7-1.4, 0.9.7-1.3, 0.9.7-1.2, 0.9.7-1.1, 0.9.7-1, 0.9.7-0, 0.9.6-23, 0.9.6-22, 0.9.6-21, 0.9.6-20, 0.9.6-19, 0.9.6-18, 0.9.6-17, 0.9.6-16, 0.9.6-15, 0.9.6-14, 0.9.6-13, 0.9.6-12, 0.9.6-11, 0.9.6-10, 0.9.6-9, 0.9.6-8, 0.9.6-7, 0.9.4, 0.9.4-4, 0.9.3, 0.9.2, 0.9.1
+47 silly fetchPackageMetaData
+47 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+47 silly fetchPackageMetaData     at /usr/share/npm/node_modules/iferr/index.js:13:50
+47 silly fetchPackageMetaData     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+47 silly fetchPackageMetaData     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+47 silly fetchPackageMetaData     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+47 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:135:15)
+47 silly fetchPackageMetaData  error for mongodb@^3.6.0 Error: No compatible version found: mongodb@^3.6.0
+47 silly fetchPackageMetaData Valid install targets:
+47 silly fetchPackageMetaData 3.1.8, 3.1.7, 3.1.6, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.1.0-beta4, 3.1.0-beta3, 3.1.0-beta2, 3.1.0-beta1, 3.0.11, 3.0.10, 3.0.9, 3.0.8, 3.0.7, 3.0.6, 3.0.5, 3.0.4, 3.0.3, 3.0.2, 3.0.1, 3.0.0, 3.0.0-rc0, 2.2.36, 2.2.35, 2.2.34, 2.2.33, 2.2.32, 2.2.31, 2.2.30, 2.2.29, 2.2.28, 2.2.27, 2.2.26, 2.2.25, 2.2.24, 2.2.23, 2.2.22, 2.2.21, 2.2.20, 2.2.19, 2.2.18, 2.2.17, 2.2.16, 2.2.15, 2.2.14, 2.2.13, 2.2.12, 2.2.11, 2.2.10, 2.2.9, 2.2.8, 2.2.7, 2.2.6, 2.2.5, 2.2.4, 2.2.3, 2.2.2, 2.2.1, 2.2.0, 2.2.0-alpha2, 2.2.0-alpha1, 2.1.22-alpha4, 2.1.22-alpha3, 2.1.22-alpha2, 2.1.22-alpha, 2.1.21, 2.1.20, 2.1.19, 2.1.18, 2.1.17, 2.1.16, 2.1.15, 2.1.14, 2.1.13, 2.1.12, 2.1.11, 2.1.10, 2.1.9, 2.1.8, 2.1.7, 2.1.6, 2.1.5, 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.1.0-rc1, 2.1.0-alpha, 2.0.55, 2.0.54, 2.0.53, 2.0.52, 2.0.51, 2.0.50, 2.0.49, 2.0.48, 2.0.47, 2.0.46, 2.0.45, 2.0.44, 2.0.43, 2.0.42, 2.0.41, 2.0.40, 2.0.39, 2.0.38, 2.0.37, 2.0.36, 2.0.35, 2.0.34, 2.0.33, 2.0.32, 2.0.31, 2.0.30, 2.0.29, 2.0.28, 2.0.27, 2.0.26, 2.0.25, 2.0.24, 2.0.23, 2.0.22, 2.0.21, 2.0.20, 2.0.19, 2.0.18, 2.0.17, 2.0.16, 2.0.15, 2.0.14, 2.0.13, 2.0.12, 2.0.11, 2.0.10, 2.0.9, 2.0.8, 2.0.7, 2.0.6, 2.0.5, 2.0.4, 2.0.3, 2.0.2, 2.0.1, 2.0.0, 2.0.0-alpha2, 2.0.0-alpha1, 1.4.40, 1.4.39, 1.4.38, 1.4.37, 1.4.36, 1.4.35, 1.4.34, 1.4.33, 1.4.32, 1.4.31, 1.4.30, 1.4.29, 1.4.28, 1.4.27, 1.4.26, 1.4.25, 1.4.24, 1.4.23, 1.4.22, 1.4.20, 1.4.19, 1.4.18, 1.4.17, 1.4.16, 1.4.15, 1.4.14, 1.4.12, 1.4.11, 1.4.10, 1.4.9, 1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.4.0-rc9, 1.4.0-rc8, 1.4.0-rc7, 1.4.0-rc6, 1.4.0-rc5, 1.4.0-rc4, 1.4.0-rc3, 1.4.0-rc2, 1.4.0-rc10, 1.3.23, 1.3.22, 1.3.21, 1.3.20, 1.3.19, 1.3.18, 1.3.17, 1.3.15, 1.3.14, 1.3.12, 1.3.11, 1.3.10, 1.3.9, 1.3.8, 1.3.7, 1.3.6, 1.3.5, 1.3.4, 1.3.3, 1.3.2, 1.3.1, 1.3.0, 1.2.14, 1.2.13, 1.2.12, 1.2.11, 1.2.10, 1.2.9, 1.2.8, 1.2.7, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.11, 1.1.10, 1.1.9, 1.1.8, 1.1.7, 1.1.6, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.1.0-beta, 1.0.2, 1.0.1, 1.0.0, 0.9.9, 0.9.9-8, 0.9.9-7, 0.9.9-6, 0.9.9-5, 0.9.9-4, 0.9.9-3, 0.9.9-2, 0.9.9-1, 0.9.8, 0.9.8-7, 0.9.8-6, 0.9.8-5, 0.9.8-4, 0.9.8-3, 0.9.8-2, 0.9.8-1, 0.9.7, 0.9.7-3-5, 0.9.7-3-4, 0.9.7-3-3, 0.9.7-3-2, 0.9.7-3-1, 0.9.7-2-5, 0.9.7-2-4, 0.9.7-2-3, 0.9.7-2-2, 0.9.7-2-1, 0.9.7-3, 0.9.7-2, 0.9.7-1.4, 0.9.7-1.3, 0.9.7-1.2, 0.9.7-1.1, 0.9.7-1, 0.9.7-0, 0.9.6-23, 0.9.6-22, 0.9.6-21, 0.9.6-20, 0.9.6-19, 0.9.6-18, 0.9.6-17, 0.9.6-16, 0.9.6-15, 0.9.6-14, 0.9.6-13, 0.9.6-12, 0.9.6-11, 0.9.6-10, 0.9.6-9, 0.9.6-8, 0.9.6-7, 0.9.4, 0.9.4-4, 0.9.3, 0.9.2, 0.9.1
+47 silly fetchPackageMetaData
+47 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+47 silly fetchPackageMetaData     at /usr/share/npm/node_modules/iferr/index.js:13:50
+47 silly fetchPackageMetaData     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+47 silly fetchPackageMetaData     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+47 silly fetchPackageMetaData     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+47 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:135:15)
+48 http 200 https://registry.npmjs.org/firebase
+49 verbose headers { date: 'Tue, 16 Oct 2018 07:28:47 GMT',
+49 verbose headers   'content-type': 'application/json',
+49 verbose headers   'transfer-encoding': 'chunked',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'set-cookie':
+49 verbose headers    [ '__cfduid=ded1c3799cf88c8254927ed394ec21f8b1539674926; expires=Wed, 16-Oct-19 07:28:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+49 verbose headers   'cf-cache-status': 'REVALIDATED',
+49 verbose headers   'cache-control': 'max-age=300',
+49 verbose headers   'cf-ray': '46a8cf813ea6adb1-TLV',
+49 verbose headers   etag: 'W/"337650b4cf9cc51503a39cb2fe4f03b5"',
+49 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+49 verbose headers   'last-modified': 'Mon, 15 Oct 2018 16:03:15 GMT',
+49 verbose headers   vary: 'accept-encoding, accept',
+49 verbose headers   'x-amz-meta-rev': '808-27b90e0ed8ff846c1250adae673e799a',
+49 verbose headers   server: 'cloudflare',
+49 verbose headers   'content-encoding': 'gzip' }
+50 silly get cb [ 200,
+50 silly get   { date: 'Tue, 16 Oct 2018 07:28:47 GMT',
+50 silly get     'content-type': 'application/json',
+50 silly get     'transfer-encoding': 'chunked',
+50 silly get     connection: 'keep-alive',
+50 silly get     'set-cookie':
+50 silly get      [ '__cfduid=ded1c3799cf88c8254927ed394ec21f8b1539674926; expires=Wed, 16-Oct-19 07:28:46 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+50 silly get     'cf-cache-status': 'REVALIDATED',
+50 silly get     'cache-control': 'max-age=300',
+50 silly get     'cf-ray': '46a8cf813ea6adb1-TLV',
+50 silly get     etag: 'W/"337650b4cf9cc51503a39cb2fe4f03b5"',
+50 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+50 silly get     'last-modified': 'Mon, 15 Oct 2018 16:03:15 GMT',
+50 silly get     vary: 'accept-encoding, accept',
+50 silly get     'x-amz-meta-rev': '808-27b90e0ed8ff846c1250adae673e799a',
+50 silly get     server: 'cloudflare',
+50 silly get     'content-encoding': 'gzip' } ]
+51 verbose get saving firebase to /home/shlomi/.npm/registry.npmjs.org/firebase/.cache.json
+52 silly resolveWithNewModule firebase@3.9.0 checking installable status
+53 silly cache add args [ 'firebase@^3.5.2', null ]
+54 verbose cache add spec firebase@^3.5.2
+55 silly cache add parsed spec Result {
+55 silly cache add   raw: 'firebase@^3.5.2',
+55 silly cache add   scope: null,
+55 silly cache add   name: 'firebase',
+55 silly cache add   rawSpec: '^3.5.2',
+55 silly cache add   spec: '>=3.5.2 <4.0.0',
+55 silly cache add   type: 'range' }
+56 silly addNamed firebase@>=3.5.2 <4.0.0
+57 verbose addNamed ">=3.5.2 <4.0.0" is a valid semver range for firebase
+58 silly addNameRange { name: 'firebase', range: '>=3.5.2 <4.0.0', hasData: false }
+59 silly mapToRegistry name firebase
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry uri https://registry.npmjs.org/firebase
+63 verbose addNameRange registry:https://registry.npmjs.org/firebase not in flight; fetching
+64 verbose get https://registry.npmjs.org/firebase not expired, no request
+65 silly addNameRange number 2 { name: 'firebase', range: '>=3.5.2 <4.0.0', hasData: true }
+66 silly addNameRange versions [ 'firebase',
+66 silly addNameRange   [ '0.0.0',
+66 silly addNameRange     '0.5.0',
+66 silly addNameRange     '0.5.1',
+66 silly addNameRange     '0.5.2',
+66 silly addNameRange     '0.5.3',
+66 silly addNameRange     '0.5.4',
+66 silly addNameRange     '0.6.0',
+66 silly addNameRange     '0.6.1',
+66 silly addNameRange     '0.6.2',
+66 silly addNameRange     '0.6.3',
+66 silly addNameRange     '0.6.4',
+66 silly addNameRange     '0.6.5',
+66 silly addNameRange     '0.6.6',
+66 silly addNameRange     '0.6.7',
+66 silly addNameRange     '0.6.8',
+66 silly addNameRange     '0.6.9',
+66 silly addNameRange     '0.6.10',
+66 silly addNameRange     '0.6.11',
+66 silly addNameRange     '0.6.14',
+66 silly addNameRange     '0.6.15',
+66 silly addNameRange     '0.6.16',
+66 silly addNameRange     '0.6.17',
+66 silly addNameRange     '0.6.19',
+66 silly addNameRange     '0.6.21',
+66 silly addNameRange     '0.6.22',
+66 silly addNameRange     '1.0.1',
+66 silly addNameRange     '1.0.1-npm',
+66 silly addNameRange     '1.0.2',
+66 silly addNameRange     '1.0.3',
+66 silly addNameRange     '1.0.4',
+66 silly addNameRange     '1.0.5',
+66 silly addNameRange     '1.0.10',
+66 silly addNameRange     '1.0.10-2',
+66 silly addNameRange     '1.0.11',
+66 silly addNameRange     '1.0.12',
+66 silly addNameRange     '1.0.13',
+66 silly addNameRange     '1.0.14',
+66 silly addNameRange     '1.0.15',
+66 silly addNameRange     '1.0.15-2',
+66 silly addNameRange     '1.0.15-3',
+66 silly addNameRange     '1.0.17',
+66 silly addNameRange     '1.0.18',
+66 silly addNameRange     '1.0.19',
+66 silly addNameRange     '1.0.20',
+66 silly addNameRange     '1.0.21',
+66 silly addNameRange     '1.0.23',
+66 silly addNameRange     '1.0.24',
+66 silly addNameRange     '1.1.0',
+66 silly addNameRange     '1.1.1',
+66 silly addNameRange     '1.1.2',
+66 silly addNameRange     '1.2.0-beta.1-0',
+66 silly addNameRange     '1.2.0-beta.2',
+66 silly addNameRange     '1.1.3',
+66 silly addNameRange     '1.2.0-beta.3',
+66 silly addNameRange     '2.0.0',
+66 silly addNameRange     '2.0.1',
+66 silly addNameRange     '2.0.2',
+66 silly addNameRange     '2.0.3',
+66 silly addNameRange     '2.0.4',
+66 silly addNameRange     '2.0.5',
+66 silly addNameRange     '2.0.6',
+66 silly addNameRange     '2.1.0',
+66 silly addNameRange     '2.1.1',
+66 silly addNameRange     '2.1.2',
+66 silly addNameRange     '1.2.0',
+66 silly addNameRange     '2.2.0',
+66 silly addNameRange     '2.2.1',
+66 silly addNameRange     '2.2.2',
+66 silly addNameRange     '2.2.3',
+66 silly addNameRange     '2.2.4',
+66 silly addNameRange     '2.2.5',
+66 silly addNameRange     '2.2.6',
+66 silly addNameRange     '2.2.7',
+66 silly addNameRange     '2.2.8',
+66 silly addNameRange     '2.2.9',
+66 silly addNameRange     '2.3.0',
+66 silly addNameRange     '2.3.1',
+66 silly addNameRange     '2.3.2',
+66 silly addNameRange     '2.4.0',
+66 silly addNameRange     '2.4.1',
+66 silly addNameRange     '2.4.2',
+66 silly addNameRange     '3.0.0',
+66 silly addNameRange     '3.0.1',
+66 silly addNameRange     '3.0.2',
+66 silly addNameRange     '3.0.3',
+66 silly addNameRange     '3.0.4',
+66 silly addNameRange     '3.0.5',
+66 silly addNameRange     '3.1.0',
+66 silly addNameRange     '3.2.0',
+66 silly addNameRange     '3.2.1',
+66 silly addNameRange     '3.3.0',
+66 silly addNameRange     '3.3.1',
+66 silly addNameRange     '3.3.2',
+66 silly addNameRange     '3.4.0',
+66 silly addNameRange     '3.4.1',
+66 silly addNameRange     '3.5.0',
+66 silly addNameRange     '3.5.1',
+66 silly addNameRange     '3.5.2',
+66 silly addNameRange     '3.5.3',
+66 silly addNameRange     '3.6.0',
+66 silly addNameRange     ... 435 more items ] ]
+67 silly addNamed firebase@3.9.0
+68 verbose addNamed "3.9.0" is a plain semver version for firebase
+69 silly mapToRegistry name firebase
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry uri https://registry.npmjs.org/firebase
+73 verbose addRemoteTarball https://registry.npmjs.org/firebase/-/firebase-3.9.0.tgz not in flight; adding
+74 verbose addRemoteTarball [ 'https://registry.npmjs.org/firebase/-/firebase-3.9.0.tgz',
+74 verbose addRemoteTarball   'c4237f50f58eeb25081b1839d6cbf175f8f7ed9b' ]
+75 info retry fetch attempt 1 at 10:28:47 AM
+76 info attempt registry request try #1 at 10:28:47 AM
+77 http fetch GET https://registry.npmjs.org/firebase/-/firebase-3.9.0.tgz
+78 http fetch 200 https://registry.npmjs.org/firebase/-/firebase-3.9.0.tgz
+79 silly fetchAndShaCheck shasum c4237f50f58eeb25081b1839d6cbf175f8f7ed9b
+80 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/firebase/-/firebase-3.9.0.tgz not in flight; adding
+81 verbose addTmpTarball already have metadata; skipping unpack for firebase@3.9.0
+82 silly cache afterAdd firebase@3.9.0
+83 verbose afterAdd /home/shlomi/.npm/firebase/3.9.0/package/package.json not in flight; writing
+84 verbose afterAdd /home/shlomi/.npm/firebase/3.9.0/package/package.json written
+85 silly addShrinkwrap Found shrinkwrap in firebase package/npm-shrinkwrap.json
+86 silly addShrinkwrap Completed reading shrinkwrap in firebase
+87 silly fetchPackageMetaData base64url@https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+88 silly fetchPackageMetaData buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+89 silly fetchPackageMetaData dom-storage@https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+90 silly fetchPackageMetaData ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+91 silly fetchPackageMetaData faye-websocket@https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+92 silly fetchPackageMetaData hoek@https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+93 silly fetchPackageMetaData isemail@https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+94 silly fetchPackageMetaData joi@https://registry.npmjs.org/joi/-/joi-6.10.1.tgz
+95 silly fetchPackageMetaData jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+96 silly fetchPackageMetaData jwa@https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+97 silly fetchPackageMetaData jws@https://registry.npmjs.org/jws/-/jws-3.1.4.tgz
+98 silly fetchPackageMetaData lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+99 silly fetchPackageMetaData moment@https://registry.npmjs.org/moment/-/moment-2.18.1.tgz
+100 silly fetchPackageMetaData ms@https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+101 silly fetchPackageMetaData promise-polyfill@https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+102 silly fetchPackageMetaData safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+103 silly fetchPackageMetaData topo@https://registry.npmjs.org/topo/-/topo-1.1.0.tgz
+104 silly fetchPackageMetaData websocket-driver@https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+105 silly fetchPackageMetaData websocket-extensions@https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+106 silly fetchPackageMetaData xmlhttprequest@https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+107 silly fetchPackageMetaData xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+108 silly fetchOtherPackageData base64url@https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+109 silly cache add args [ 'base64url@https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz',
+109 silly cache add   null ]
+110 verbose cache add spec base64url@https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+111 silly fetchOtherPackageData buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+112 silly cache add args [ 'buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz',
+112 silly cache add   null ]
+113 verbose cache add spec buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+114 silly fetchOtherPackageData dom-storage@https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+115 silly cache add args [ 'dom-storage@https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz',
+115 silly cache add   null ]
+116 verbose cache add spec dom-storage@https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+117 silly fetchOtherPackageData ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+118 silly cache add args [ 'ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz',
+118 silly cache add   null ]
+119 verbose cache add spec ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+120 silly fetchOtherPackageData faye-websocket@https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+121 silly cache add args [ 'faye-websocket@https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz',
+121 silly cache add   null ]
+122 verbose cache add spec faye-websocket@https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+123 silly fetchOtherPackageData hoek@https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+124 silly cache add args [ 'hoek@https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz',
+124 silly cache add   null ]
+125 verbose cache add spec hoek@https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+126 silly fetchOtherPackageData isemail@https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+127 silly cache add args [ 'isemail@https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz',
+127 silly cache add   null ]
+128 verbose cache add spec isemail@https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+129 silly fetchOtherPackageData joi@https://registry.npmjs.org/joi/-/joi-6.10.1.tgz
+130 silly cache add args [ 'joi@https://registry.npmjs.org/joi/-/joi-6.10.1.tgz', null ]
+131 verbose cache add spec joi@https://registry.npmjs.org/joi/-/joi-6.10.1.tgz
+132 silly fetchOtherPackageData jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+133 silly cache add args [ 'jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz',
+133 silly cache add   null ]
+134 verbose cache add spec jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+135 silly fetchOtherPackageData jwa@https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+136 silly cache add args [ 'jwa@https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz', null ]
+137 verbose cache add spec jwa@https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+138 silly fetchOtherPackageData jws@https://registry.npmjs.org/jws/-/jws-3.1.4.tgz
+139 silly cache add args [ 'jws@https://registry.npmjs.org/jws/-/jws-3.1.4.tgz', null ]
+140 verbose cache add spec jws@https://registry.npmjs.org/jws/-/jws-3.1.4.tgz
+141 silly fetchOtherPackageData lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+142 silly cache add args [ 'lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz',
+142 silly cache add   null ]
+143 verbose cache add spec lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+144 silly fetchOtherPackageData moment@https://registry.npmjs.org/moment/-/moment-2.18.1.tgz
+145 silly cache add args [ 'moment@https://registry.npmjs.org/moment/-/moment-2.18.1.tgz',
+145 silly cache add   null ]
+146 verbose cache add spec moment@https://registry.npmjs.org/moment/-/moment-2.18.1.tgz
+147 silly fetchOtherPackageData ms@https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+148 silly cache add args [ 'ms@https://registry.npmjs.org/ms/-/ms-0.7.3.tgz', null ]
+149 verbose cache add spec ms@https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+150 silly fetchOtherPackageData promise-polyfill@https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+151 silly cache add args [ 'promise-polyfill@https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz',
+151 silly cache add   null ]
+152 verbose cache add spec promise-polyfill@https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+153 silly fetchOtherPackageData safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+154 silly cache add args [ 'safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz',
+154 silly cache add   null ]
+155 verbose cache add spec safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+156 silly fetchOtherPackageData topo@https://registry.npmjs.org/topo/-/topo-1.1.0.tgz
+157 silly cache add args [ 'topo@https://registry.npmjs.org/topo/-/topo-1.1.0.tgz',
+157 silly cache add   null ]
+158 verbose cache add spec topo@https://registry.npmjs.org/topo/-/topo-1.1.0.tgz
+159 silly fetchOtherPackageData websocket-driver@https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+160 silly cache add args [ 'websocket-driver@https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz',
+160 silly cache add   null ]
+161 verbose cache add spec websocket-driver@https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+162 silly fetchOtherPackageData websocket-extensions@https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+163 silly cache add args [ 'websocket-extensions@https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz',
+163 silly cache add   null ]
+164 verbose cache add spec websocket-extensions@https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+165 silly fetchOtherPackageData xmlhttprequest@https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+166 silly cache add args [ 'xmlhttprequest@https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz',
+166 silly cache add   null ]
+167 verbose cache add spec xmlhttprequest@https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+168 silly fetchOtherPackageData xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+169 silly cache add args [ 'xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz',
+169 silly cache add   null ]
+170 verbose cache add spec xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+171 silly cache add parsed spec Result {
+171 silly cache add   raw: 'base64url@https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz',
+171 silly cache add   scope: null,
+171 silly cache add   name: 'base64url',
+171 silly cache add   rawSpec: 'https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz',
+171 silly cache add   spec: 'https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz',
+171 silly cache add   type: 'remote' }
+172 silly mapToRegistry name base64url@https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+173 silly mapToRegistry using default registry
+174 silly mapToRegistry registry https://registry.npmjs.org/
+175 silly mapToRegistry uri https://registry.npmjs.org/base64url@https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+176 verbose addRemoteTarball https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz not in flight; adding
+177 verbose addRemoteTarball [ 'https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz',
+177 verbose addRemoteTarball   null ]
+178 silly cache add parsed spec Result {
+178 silly cache add   raw: 'buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz',
+178 silly cache add   scope: null,
+178 silly cache add   name: 'buffer-equal-constant-time',
+178 silly cache add   rawSpec: 'https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz',
+178 silly cache add   spec: 'https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz',
+178 silly cache add   type: 'remote' }
+179 silly mapToRegistry name buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry uri https://registry.npmjs.org/buffer-equal-constant-time@https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+183 verbose addRemoteTarball https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz not in flight; adding
+184 verbose addRemoteTarball [ 'https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz',
+184 verbose addRemoteTarball   null ]
+185 silly cache add parsed spec Result {
+185 silly cache add   raw: 'dom-storage@https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz',
+185 silly cache add   scope: null,
+185 silly cache add   name: 'dom-storage',
+185 silly cache add   rawSpec: 'https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz',
+185 silly cache add   spec: 'https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz',
+185 silly cache add   type: 'remote' }
+186 silly mapToRegistry name dom-storage@https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+187 silly mapToRegistry using default registry
+188 silly mapToRegistry registry https://registry.npmjs.org/
+189 silly mapToRegistry uri https://registry.npmjs.org/dom-storage@https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+190 verbose addRemoteTarball https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz not in flight; adding
+191 verbose addRemoteTarball [ 'https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz',
+191 verbose addRemoteTarball   null ]
+192 silly cache add parsed spec Result {
+192 silly cache add   raw: 'ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz',
+192 silly cache add   scope: null,
+192 silly cache add   name: 'ecdsa-sig-formatter',
+192 silly cache add   rawSpec: 'https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz',
+192 silly cache add   spec: 'https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz',
+192 silly cache add   type: 'remote' }
+193 silly mapToRegistry name ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+194 silly mapToRegistry using default registry
+195 silly mapToRegistry registry https://registry.npmjs.org/
+196 silly mapToRegistry uri https://registry.npmjs.org/ecdsa-sig-formatter@https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+197 verbose addRemoteTarball https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz not in flight; adding
+198 verbose addRemoteTarball [ 'https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz',
+198 verbose addRemoteTarball   null ]
+199 silly cache add parsed spec Result {
+199 silly cache add   raw: 'faye-websocket@https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz',
+199 silly cache add   scope: null,
+199 silly cache add   name: 'faye-websocket',
+199 silly cache add   rawSpec: 'https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz',
+199 silly cache add   spec: 'https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz',
+199 silly cache add   type: 'remote' }
+200 silly mapToRegistry name faye-websocket@https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+201 silly mapToRegistry using default registry
+202 silly mapToRegistry registry https://registry.npmjs.org/
+203 silly mapToRegistry uri https://registry.npmjs.org/faye-websocket@https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+204 verbose addRemoteTarball https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz not in flight; adding
+205 verbose addRemoteTarball [ 'https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz',
+205 verbose addRemoteTarball   null ]
+206 silly cache add parsed spec Result {
+206 silly cache add   raw: 'hoek@https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz',
+206 silly cache add   scope: null,
+206 silly cache add   name: 'hoek',
+206 silly cache add   rawSpec: 'https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz',
+206 silly cache add   spec: 'https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz',
+206 silly cache add   type: 'remote' }
+207 silly mapToRegistry name hoek@https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry uri https://registry.npmjs.org/hoek@https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+211 verbose addRemoteTarball https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz not in flight; adding
+212 verbose addRemoteTarball [ 'https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz', null ]
+213 silly cache add parsed spec Result {
+213 silly cache add   raw: 'isemail@https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz',
+213 silly cache add   scope: null,
+213 silly cache add   name: 'isemail',
+213 silly cache add   rawSpec: 'https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz',
+213 silly cache add   spec: 'https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz',
+213 silly cache add   type: 'remote' }
+214 silly mapToRegistry name isemail@https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+215 silly mapToRegistry using default registry
+216 silly mapToRegistry registry https://registry.npmjs.org/
+217 silly mapToRegistry uri https://registry.npmjs.org/isemail@https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+218 verbose addRemoteTarball https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz not in flight; adding
+219 verbose addRemoteTarball [ 'https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz',
+219 verbose addRemoteTarball   null ]
+220 silly cache add parsed spec Result {
+220 silly cache add   raw: 'joi@https://registry.npmjs.org/joi/-/joi-6.10.1.tgz',
+220 silly cache add   scope: null,
+220 silly cache add   name: 'joi',
+220 silly cache add   rawSpec: 'https://registry.npmjs.org/joi/-/joi-6.10.1.tgz',
+220 silly cache add   spec: 'https://registry.npmjs.org/joi/-/joi-6.10.1.tgz',
+220 silly cache add   type: 'remote' }
+221 silly mapToRegistry name joi@https://registry.npmjs.org/joi/-/joi-6.10.1.tgz
+222 silly mapToRegistry using default registry
+223 silly mapToRegistry registry https://registry.npmjs.org/
+224 silly mapToRegistry uri https://registry.npmjs.org/joi@https://registry.npmjs.org/joi/-/joi-6.10.1.tgz
+225 verbose addRemoteTarball https://registry.npmjs.org/joi/-/joi-6.10.1.tgz not in flight; adding
+226 verbose addRemoteTarball [ 'https://registry.npmjs.org/joi/-/joi-6.10.1.tgz', null ]
+227 silly cache add parsed spec Result {
+227 silly cache add   raw: 'jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz',
+227 silly cache add   scope: null,
+227 silly cache add   name: 'jsonwebtoken',
+227 silly cache add   rawSpec: 'https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz',
+227 silly cache add   spec: 'https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz',
+227 silly cache add   type: 'remote' }
+228 silly mapToRegistry name jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+229 silly mapToRegistry using default registry
+230 silly mapToRegistry registry https://registry.npmjs.org/
+231 silly mapToRegistry uri https://registry.npmjs.org/jsonwebtoken@https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+232 verbose addRemoteTarball https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz not in flight; adding
+233 verbose addRemoteTarball [ 'https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz',
+233 verbose addRemoteTarball   null ]
+234 silly cache add parsed spec Result {
+234 silly cache add   raw: 'jwa@https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz',
+234 silly cache add   scope: null,
+234 silly cache add   name: 'jwa',
+234 silly cache add   rawSpec: 'https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz',
+234 silly cache add   spec: 'https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz',
+234 silly cache add   type: 'remote' }
+235 silly mapToRegistry name jwa@https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+236 silly mapToRegistry using default registry
+237 silly mapToRegistry registry https://registry.npmjs.org/
+238 silly mapToRegistry uri https://registry.npmjs.org/jwa@https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+239 verbose addRemoteTarball https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz not in flight; adding
+240 verbose addRemoteTarball [ 'https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz', null ]
+241 silly cache add parsed spec Result {
+241 silly cache add   raw: 'jws@https://registry.npmjs.org/jws/-/jws-3.1.4.tgz',
+241 silly cache add   scope: null,
+241 silly cache add   name: 'jws',
+241 silly cache add   rawSpec: 'https://registry.npmjs.org/jws/-/jws-3.1.4.tgz',
+241 silly cache add   spec: 'https://registry.npmjs.org/jws/-/jws-3.1.4.tgz',
+241 silly cache add   type: 'remote' }
+242 silly mapToRegistry name jws@https://registry.npmjs.org/jws/-/jws-3.1.4.tgz
+243 silly mapToRegistry using default registry
+244 silly mapToRegistry registry https://registry.npmjs.org/
+245 silly mapToRegistry uri https://registry.npmjs.org/jws@https://registry.npmjs.org/jws/-/jws-3.1.4.tgz
+246 verbose addRemoteTarball https://registry.npmjs.org/jws/-/jws-3.1.4.tgz not in flight; adding
+247 verbose addRemoteTarball [ 'https://registry.npmjs.org/jws/-/jws-3.1.4.tgz', null ]
+248 silly cache add parsed spec Result {
+248 silly cache add   raw: 'lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz',
+248 silly cache add   scope: null,
+248 silly cache add   name: 'lodash.once',
+248 silly cache add   rawSpec: 'https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz',
+248 silly cache add   spec: 'https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz',
+248 silly cache add   type: 'remote' }
+249 silly mapToRegistry name lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+250 silly mapToRegistry using default registry
+251 silly mapToRegistry registry https://registry.npmjs.org/
+252 silly mapToRegistry uri https://registry.npmjs.org/lodash.once@https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+253 verbose addRemoteTarball https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz not in flight; adding
+254 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz',
+254 verbose addRemoteTarball   null ]
+255 silly cache add parsed spec Result {
+255 silly cache add   raw: 'moment@https://registry.npmjs.org/moment/-/moment-2.18.1.tgz',
+255 silly cache add   scope: null,
+255 silly cache add   name: 'moment',
+255 silly cache add   rawSpec: 'https://registry.npmjs.org/moment/-/moment-2.18.1.tgz',
+255 silly cache add   spec: 'https://registry.npmjs.org/moment/-/moment-2.18.1.tgz',
+255 silly cache add   type: 'remote' }
+256 silly mapToRegistry name moment@https://registry.npmjs.org/moment/-/moment-2.18.1.tgz
+257 silly mapToRegistry using default registry
+258 silly mapToRegistry registry https://registry.npmjs.org/
+259 silly mapToRegistry uri https://registry.npmjs.org/moment@https://registry.npmjs.org/moment/-/moment-2.18.1.tgz
+260 verbose addRemoteTarball https://registry.npmjs.org/moment/-/moment-2.18.1.tgz not in flight; adding
+261 verbose addRemoteTarball [ 'https://registry.npmjs.org/moment/-/moment-2.18.1.tgz',
+261 verbose addRemoteTarball   null ]
+262 silly cache add parsed spec Result {
+262 silly cache add   raw: 'ms@https://registry.npmjs.org/ms/-/ms-0.7.3.tgz',
+262 silly cache add   scope: null,
+262 silly cache add   name: 'ms',
+262 silly cache add   rawSpec: 'https://registry.npmjs.org/ms/-/ms-0.7.3.tgz',
+262 silly cache add   spec: 'https://registry.npmjs.org/ms/-/ms-0.7.3.tgz',
+262 silly cache add   type: 'remote' }
+263 silly mapToRegistry name ms@https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+264 silly mapToRegistry using default registry
+265 silly mapToRegistry registry https://registry.npmjs.org/
+266 silly mapToRegistry uri https://registry.npmjs.org/ms@https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+267 verbose addRemoteTarball https://registry.npmjs.org/ms/-/ms-0.7.3.tgz not in flight; adding
+268 verbose addRemoteTarball [ 'https://registry.npmjs.org/ms/-/ms-0.7.3.tgz', null ]
+269 silly cache add parsed spec Result {
+269 silly cache add   raw: 'promise-polyfill@https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz',
+269 silly cache add   scope: null,
+269 silly cache add   name: 'promise-polyfill',
+269 silly cache add   rawSpec: 'https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz',
+269 silly cache add   spec: 'https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz',
+269 silly cache add   type: 'remote' }
+270 silly mapToRegistry name promise-polyfill@https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+271 silly mapToRegistry using default registry
+272 silly mapToRegistry registry https://registry.npmjs.org/
+273 silly mapToRegistry uri https://registry.npmjs.org/promise-polyfill@https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+274 verbose addRemoteTarball https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz not in flight; adding
+275 verbose addRemoteTarball [ 'https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz',
+275 verbose addRemoteTarball   null ]
+276 silly cache add parsed spec Result {
+276 silly cache add   raw: 'safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz',
+276 silly cache add   scope: null,
+276 silly cache add   name: 'safe-buffer',
+276 silly cache add   rawSpec: 'https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz',
+276 silly cache add   spec: 'https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz',
+276 silly cache add   type: 'remote' }
+277 silly mapToRegistry name safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+278 silly mapToRegistry using default registry
+279 silly mapToRegistry registry https://registry.npmjs.org/
+280 silly mapToRegistry uri https://registry.npmjs.org/safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+281 verbose addRemoteTarball https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz not in flight; adding
+282 verbose addRemoteTarball [ 'https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz',
+282 verbose addRemoteTarball   null ]
+283 silly cache add parsed spec Result {
+283 silly cache add   raw: 'topo@https://registry.npmjs.org/topo/-/topo-1.1.0.tgz',
+283 silly cache add   scope: null,
+283 silly cache add   name: 'topo',
+283 silly cache add   rawSpec: 'https://registry.npmjs.org/topo/-/topo-1.1.0.tgz',
+283 silly cache add   spec: 'https://registry.npmjs.org/topo/-/topo-1.1.0.tgz',
+283 silly cache add   type: 'remote' }
+284 silly mapToRegistry name topo@https://registry.npmjs.org/topo/-/topo-1.1.0.tgz
+285 silly mapToRegistry using default registry
+286 silly mapToRegistry registry https://registry.npmjs.org/
+287 silly mapToRegistry uri https://registry.npmjs.org/topo@https://registry.npmjs.org/topo/-/topo-1.1.0.tgz
+288 verbose addRemoteTarball https://registry.npmjs.org/topo/-/topo-1.1.0.tgz not in flight; adding
+289 verbose addRemoteTarball [ 'https://registry.npmjs.org/topo/-/topo-1.1.0.tgz', null ]
+290 silly cache add parsed spec Result {
+290 silly cache add   raw: 'websocket-driver@https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz',
+290 silly cache add   scope: null,
+290 silly cache add   name: 'websocket-driver',
+290 silly cache add   rawSpec: 'https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz',
+290 silly cache add   spec: 'https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz',
+290 silly cache add   type: 'remote' }
+291 silly mapToRegistry name websocket-driver@https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+292 silly mapToRegistry using default registry
+293 silly mapToRegistry registry https://registry.npmjs.org/
+294 silly mapToRegistry uri https://registry.npmjs.org/websocket-driver@https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+295 verbose addRemoteTarball https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz not in flight; adding
+296 verbose addRemoteTarball [ 'https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz',
+296 verbose addRemoteTarball   null ]
+297 silly cache add parsed spec Result {
+297 silly cache add   raw: 'websocket-extensions@https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz',
+297 silly cache add   scope: null,
+297 silly cache add   name: 'websocket-extensions',
+297 silly cache add   rawSpec: 'https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz',
+297 silly cache add   spec: 'https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz',
+297 silly cache add   type: 'remote' }
+298 silly mapToRegistry name websocket-extensions@https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+299 silly mapToRegistry using default registry
+300 silly mapToRegistry registry https://registry.npmjs.org/
+301 silly mapToRegistry uri https://registry.npmjs.org/websocket-extensions@https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+302 verbose addRemoteTarball https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz not in flight; adding
+303 verbose addRemoteTarball [ 'https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz',
+303 verbose addRemoteTarball   null ]
+304 silly cache add parsed spec Result {
+304 silly cache add   raw: 'xmlhttprequest@https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz',
+304 silly cache add   scope: null,
+304 silly cache add   name: 'xmlhttprequest',
+304 silly cache add   rawSpec: 'https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz',
+304 silly cache add   spec: 'https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz',
+304 silly cache add   type: 'remote' }
+305 silly mapToRegistry name xmlhttprequest@https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+306 silly mapToRegistry using default registry
+307 silly mapToRegistry registry https://registry.npmjs.org/
+308 silly mapToRegistry uri https://registry.npmjs.org/xmlhttprequest@https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+309 verbose addRemoteTarball https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz not in flight; adding
+310 verbose addRemoteTarball [ 'https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz',
+310 verbose addRemoteTarball   null ]
+311 silly cache add parsed spec Result {
+311 silly cache add   raw: 'xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz',
+311 silly cache add   scope: null,
+311 silly cache add   name: 'xtend',
+311 silly cache add   rawSpec: 'https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz',
+311 silly cache add   spec: 'https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz',
+311 silly cache add   type: 'remote' }
+312 silly mapToRegistry name xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+313 silly mapToRegistry using default registry
+314 silly mapToRegistry registry https://registry.npmjs.org/
+315 silly mapToRegistry uri https://registry.npmjs.org/xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+316 verbose addRemoteTarball https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz not in flight; adding
+317 verbose addRemoteTarball [ 'https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz', null ]
+318 info retry fetch attempt 1 at 10:28:47 AM
+319 info attempt registry request try #1 at 10:28:47 AM
+320 http fetch GET https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+321 info retry fetch attempt 1 at 10:28:47 AM
+322 info attempt registry request try #1 at 10:28:47 AM
+323 http fetch GET https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+324 info retry fetch attempt 1 at 10:28:47 AM
+325 info attempt registry request try #1 at 10:28:47 AM
+326 http fetch GET https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+327 info retry fetch attempt 1 at 10:28:47 AM
+328 info attempt registry request try #1 at 10:28:47 AM
+329 http fetch GET https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+330 info retry fetch attempt 1 at 10:28:47 AM
+331 info attempt registry request try #1 at 10:28:47 AM
+332 http fetch GET https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+333 info retry fetch attempt 1 at 10:28:47 AM
+334 info attempt registry request try #1 at 10:28:47 AM
+335 http fetch GET https://registry.npmjs.org/joi/-/joi-6.10.1.tgz
+336 info retry fetch attempt 1 at 10:28:47 AM
+337 info attempt registry request try #1 at 10:28:47 AM
+338 http fetch GET https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+339 info retry fetch attempt 1 at 10:28:47 AM
+340 info attempt registry request try #1 at 10:28:47 AM
+341 http fetch GET https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+342 info retry fetch attempt 1 at 10:28:47 AM
+343 info attempt registry request try #1 at 10:28:47 AM
+344 http fetch GET https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+345 info retry fetch attempt 1 at 10:28:47 AM
+346 info attempt registry request try #1 at 10:28:47 AM
+347 http fetch GET https://registry.npmjs.org/jws/-/jws-3.1.4.tgz
+348 info retry fetch attempt 1 at 10:28:47 AM
+349 info attempt registry request try #1 at 10:28:47 AM
+350 http fetch GET https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+351 info retry fetch attempt 1 at 10:28:47 AM
+352 info attempt registry request try #1 at 10:28:47 AM
+353 http fetch GET https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+354 info retry fetch attempt 1 at 10:28:47 AM
+355 info attempt registry request try #1 at 10:28:47 AM
+356 http fetch GET https://registry.npmjs.org/moment/-/moment-2.18.1.tgz
+357 info retry fetch attempt 1 at 10:28:47 AM
+358 info attempt registry request try #1 at 10:28:47 AM
+359 http fetch GET https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+360 info retry fetch attempt 1 at 10:28:47 AM
+361 info attempt registry request try #1 at 10:28:47 AM
+362 http fetch GET https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+363 info retry fetch attempt 1 at 10:28:47 AM
+364 info attempt registry request try #1 at 10:28:47 AM
+365 http fetch GET https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+366 info retry fetch attempt 1 at 10:28:47 AM
+367 info attempt registry request try #1 at 10:28:47 AM
+368 http fetch GET https://registry.npmjs.org/topo/-/topo-1.1.0.tgz
+369 info retry fetch attempt 1 at 10:28:47 AM
+370 info attempt registry request try #1 at 10:28:47 AM
+371 http fetch GET https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+372 info retry fetch attempt 1 at 10:28:47 AM
+373 info attempt registry request try #1 at 10:28:47 AM
+374 http fetch GET https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+375 info retry fetch attempt 1 at 10:28:47 AM
+376 info attempt registry request try #1 at 10:28:47 AM
+377 http fetch GET https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+378 info retry fetch attempt 1 at 10:28:47 AM
+379 info attempt registry request try #1 at 10:28:47 AM
+380 http fetch GET https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+381 http fetch 200 https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+382 http fetch 200 https://registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+383 silly fetchAndShaCheck shasum f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819
+384 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz not in flight; adding
+385 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+386 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz
+387 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-bafb6ad8
+388 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-bafb6ad8 is being purged
+389 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-bafb6ad8
+390 silly gunzTarPerm modes [ '775', '664' ]
+391 silly fetchAndShaCheck shasum eac16e03ea1438eff9423d69baa36262ed1f70bb
+392 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/base64url/-/base64url-2.0.0.tgz not in flight; adding
+393 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+394 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/base64url/-/base64url-2.0.0.tgz
+395 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-d706f886
+396 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-d706f886 is being purged
+397 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-d706f886
+398 silly gunzTarPerm modes [ '775', '664' ]
+399 silly gunzTarPerm extractEntry package.json
+400 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+401 silly gunzTarPerm extractEntry package.json
+402 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+403 silly gunzTarPerm extractEntry .npmignore
+404 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+405 silly gunzTarPerm extractEntry README.md
+406 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+407 silly gunzTarPerm extractEntry index.js
+408 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+409 silly gunzTarPerm extractEntry dist/base64url.js
+410 silly gunzTarPerm modified mode [ 'dist/base64url.js', 420, 436 ]
+411 silly gunzTarPerm extractEntry index.js
+412 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+413 silly gunzTarPerm extractEntry test.js
+414 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+415 silly gunzTarPerm extractEntry dist/pad-string.js
+416 silly gunzTarPerm modified mode [ 'dist/pad-string.js', 420, 436 ]
+417 silly gunzTarPerm extractEntry dist/.gitkeep
+418 silly gunzTarPerm modified mode [ 'dist/.gitkeep', 420, 436 ]
+419 silly gunzTarPerm extractEntry .travis.yml
+420 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+421 silly gunzTarPerm extractEntry dist/base64url.d.ts
+422 silly gunzTarPerm modified mode [ 'dist/base64url.d.ts', 420, 436 ]
+423 silly gunzTarPerm extractEntry dist/pad-string.d.ts
+424 silly gunzTarPerm modified mode [ 'dist/pad-string.d.ts', 420, 436 ]
+425 silly gunzTarPerm extractEntry LICENSE.txt
+426 silly gunzTarPerm modified mode [ 'LICENSE.txt', 420, 436 ]
+427 silly gunzTarPerm extractEntry typings/globals/node/index.d.ts
+428 silly gunzTarPerm modified mode [ 'typings/globals/node/index.d.ts', 420, 436 ]
+429 silly gunzTarPerm extractEntry typings/globals/node/typings.json
+430 silly gunzTarPerm modified mode [ 'typings/globals/node/typings.json', 420, 436 ]
+431 silly gunzTarPerm extractEntry typings/index.d.ts
+432 silly gunzTarPerm modified mode [ 'typings/index.d.ts', 420, 436 ]
+433 silly gunzTarPerm extractEntry readme.md
+434 silly gunzTarPerm modified mode [ 'readme.md', 420, 436 ]
+435 silly cache afterAdd buffer-equal-constant-time@1.0.1
+436 verbose afterAdd /home/shlomi/.npm/buffer-equal-constant-time/1.0.1/package/package.json not in flight; writing
+437 verbose afterAdd /home/shlomi/.npm/buffer-equal-constant-time/1.0.1/package/package.json written
+438 silly cache afterAdd base64url@2.0.0
+439 verbose afterAdd /home/shlomi/.npm/base64url/2.0.0/package/package.json not in flight; writing
+440 verbose afterAdd /home/shlomi/.npm/base64url/2.0.0/package/package.json written
+441 http fetch 200 https://registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+442 http fetch 200 https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+443 http fetch 200 https://registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+444 silly fetchAndShaCheck shasum ed17cbf68abd10e0aef8182713e297c5e4b500b0
+445 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz not in flight; adding
+446 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+447 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/dom-storage/-/dom-storage-2.0.2.tgz
+448 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-5f1b2789
+449 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-5f1b2789 is being purged
+450 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-5f1b2789
+451 silly gunzTarPerm modes [ '775', '664' ]
+452 silly fetchAndShaCheck shasum 4bc926274ec3b5abb5016e7e1d60921ac262b2a1
+453 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz not in flight; adding
+454 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+455 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.9.tgz
+456 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-844dfb01
+457 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-844dfb01 is being purged
+458 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-844dfb01
+459 silly gunzTarPerm modes [ '775', '664' ]
+460 http fetch 200 https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+461 http fetch 200 https://registry.npmjs.org/jws/-/jws-3.1.4.tgz
+462 http fetch 200 https://registry.npmjs.org/moment/-/moment-2.18.1.tgz
+463 http fetch 200 https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+464 http fetch 200 https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+465 silly gunzTarPerm extractEntry package.json
+466 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+467 silly fetchAndShaCheck shasum a0552ce0220742cd52e153774a32905c30e756e5
+468 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/jwa/-/jwa-1.1.5.tgz not in flight; adding
+469 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+470 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/jwa/-/jwa-1.1.5.tgz
+471 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-1d276e49
+472 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-1d276e49 is being purged
+473 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-1d276e49
+474 silly gunzTarPerm extractEntry package.json
+475 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+476 silly gunzTarPerm modes [ '775', '664' ]
+477 silly fetchAndShaCheck shasum 0dd3971213c7c56df880977d504c88fb471a97ac
+478 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz not in flight; adding
+479 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+480 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz
+481 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-ecd3f278
+482 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-ecd3f278 is being purged
+483 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-ecd3f278
+484 silly fetchAndShaCheck shasum f9e8b9338e8a847277d6444b1464f61880e050a2
+485 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/jws/-/jws-3.1.4.tgz not in flight; adding
+486 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/jws/-/jws-3.1.4.tgz
+487 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/jws/-/jws-3.1.4.tgz
+488 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-4016cbfc
+489 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-4016cbfc is being purged
+490 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-4016cbfc
+491 silly gunzTarPerm modes [ '775', '664' ]
+492 silly gunzTarPerm modes [ '775', '664' ]
+493 silly gunzTarPerm extractEntry README.md
+494 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+495 silly gunzTarPerm extractEntry LICENSE
+496 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+497 silly fetchAndShaCheck shasum d9c86d3dc4dc2df9016e88946defd69b49b41162
+498 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz not in flight; adding
+499 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+500 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/promise-polyfill/-/promise-polyfill-6.0.2.tgz
+501 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-87428489
+502 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-87428489 is being purged
+503 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-87428489
+504 silly gunzTarPerm extractEntry README.md
+505 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+506 silly gunzTarPerm extractEntry LICENSE
+507 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+508 silly gunzTarPerm modes [ '775', '664' ]
+509 silly gunzTarPerm extractEntry package.json
+510 silly gunzTarPerm extractEntry package.json
+511 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+512 silly gunzTarPerm extractEntry package.json
+513 silly gunzTarPerm extractEntry .npmignore
+514 silly gunzTarPerm extractEntry README.md
+515 http fetch 200 https://registry.npmjs.org/joi/-/joi-6.10.1.tgz
+516 silly gunzTarPerm extractEntry lib/index.js
+517 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+518 silly gunzTarPerm extractEntry tests/test.js
+519 silly gunzTarPerm modified mode [ 'tests/test.js', 420, 436 ]
+520 silly gunzTarPerm extractEntry package.json
+521 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+522 silly gunzTarPerm extractEntry README.md
+523 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+524 silly gunzTarPerm extractEntry LICENSE
+525 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+526 silly gunzTarPerm extractEntry .npmignore
+527 silly gunzTarPerm extractEntry LICENSE
+528 silly gunzTarPerm extractEntry src/ecdsa-sig-formatter.js
+529 silly gunzTarPerm modified mode [ 'src/ecdsa-sig-formatter.js', 420, 436 ]
+530 silly gunzTarPerm extractEntry .npmignore
+531 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+532 silly gunzTarPerm extractEntry README.md
+533 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+534 silly gunzTarPerm extractEntry LICENSE
+535 silly gunzTarPerm extractEntry index.js
+536 silly gunzTarPerm extractEntry index.js
+537 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+538 silly gunzTarPerm extractEntry index.js
+539 silly gunzTarPerm extractEntry lib/data-stream.js
+540 silly gunzTarPerm extractEntry src/param-bytes-for-alg.js
+541 silly gunzTarPerm modified mode [ 'src/param-bytes-for-alg.js', 420, 436 ]
+542 http fetch 200 https://registry.npmjs.org/ms/-/ms-0.7.3.tgz
+543 silly gunzTarPerm extractEntry LICENSE
+544 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+545 silly gunzTarPerm extractEntry .eslintrc.js
+546 silly gunzTarPerm modified mode [ '.eslintrc.js', 420, 436 ]
+547 silly fetchAndShaCheck shasum 708155a5e44e33f5fd0fc53e81d0d40a91be1fff
+548 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/ms/-/ms-0.7.3.tgz not in flight; adding
+549 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/ms/-/ms-0.7.3.tgz
+550 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/ms/-/ms-0.7.3.tgz
+551 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-16acf1cd
+552 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-16acf1cd is being purged
+553 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-16acf1cd
+554 silly gunzTarPerm extractEntry lib/sign-stream.js
+555 silly gunzTarPerm extractEntry lib/tostring.js
+556 silly gunzTarPerm modes [ '775', '664' ]
+557 silly gunzTarPerm extractEntry karma.conf.js
+558 silly gunzTarPerm modified mode [ 'karma.conf.js', 420, 436 ]
+559 silly gunzTarPerm extractEntry promise.min.js
+560 silly gunzTarPerm modified mode [ 'promise.min.js', 420, 436 ]
+561 http fetch 200 https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+562 silly gunzTarPerm extractEntry package.json
+563 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+564 silly gunzTarPerm extractEntry lib/verify-stream.js
+565 silly gunzTarPerm extractEntry readme.md
+566 silly gunzTarPerm extractEntry promise.js
+567 silly gunzTarPerm modified mode [ 'promise.js', 420, 436 ]
+568 silly gunzTarPerm extractEntry .editorconfig
+569 silly gunzTarPerm modified mode [ '.editorconfig', 420, 436 ]
+570 silly gunzTarPerm extractEntry bower.json
+571 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+572 silly gunzTarPerm extractEntry .travis.yml
+573 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+574 silly gunzTarPerm extractEntry CHANGELOG.md
+575 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+576 silly gunzTarPerm extractEntry test/adapter.js
+577 silly gunzTarPerm modified mode [ 'test/adapter.js', 420, 436 ]
+578 silly gunzTarPerm extractEntry test/promise.js
+579 silly gunzTarPerm modified mode [ 'test/promise.js', 420, 436 ]
+580 silly gunzTarPerm extractEntry index.js
+581 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+582 silly gunzTarPerm extractEntry license.md
+583 silly gunzTarPerm modified mode [ 'license.md', 420, 436 ]
+584 http fetch 200 https://registry.npmjs.org/topo/-/topo-1.1.0.tgz
+585 silly gunzTarPerm extractEntry CHANGELOG.md
+586 silly gunzTarPerm extractEntry readme.md
+587 silly gunzTarPerm modified mode [ 'readme.md', 420, 436 ]
+588 silly fetchAndShaCheck shasum e9d751615d1bb87dc865db182fa1ca0a5ef536d5
+589 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/topo/-/topo-1.1.0.tgz not in flight; adding
+590 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/topo/-/topo-1.1.0.tgz
+591 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/topo/-/topo-1.1.0.tgz
+592 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-1d2b752c
+593 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-1d2b752c is being purged
+594 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-1d2b752c
+595 silly gunzTarPerm modes [ '775', '664' ]
+596 http fetch 200 https://registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+597 http fetch 200 https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+598 silly gunzTarPerm extractEntry package.json
+599 silly gunzTarPerm modified mode [ 'package.json', 493, 509 ]
+600 silly fetchAndShaCheck shasum a5c6d532be656e23db820efb943a1f04998d63af
+601 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/xtend/-/xtend-4.0.1.tgz not in flight; adding
+602 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+603 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/xtend/-/xtend-4.0.1.tgz
+604 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-7dddaa24
+605 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-7dddaa24 is being purged
+606 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-7dddaa24
+607 silly gunzTarPerm modes [ '775', '664' ]
+608 silly gunzTarPerm extractEntry .npmignore
+609 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+610 silly gunzTarPerm extractEntry README.md
+611 silly gunzTarPerm modified mode [ 'README.md', 493, 509 ]
+612 silly gunzTarPerm extractEntry package.json
+613 silly cache afterAdd lodash.once@4.1.1
+614 verbose afterAdd /home/shlomi/.npm/lodash.once/4.1.1/package/package.json not in flight; writing
+615 silly gunzTarPerm extractEntry LICENSE
+616 silly gunzTarPerm modified mode [ 'LICENSE', 493, 509 ]
+617 silly gunzTarPerm extractEntry CONTRIBUTING.md
+618 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 493, 509 ]
+619 silly gunzTarPerm extractEntry .npmignore
+620 silly gunzTarPerm extractEntry README.md
+621 silly cache afterAdd dom-storage@2.0.2
+622 verbose afterAdd /home/shlomi/.npm/dom-storage/2.0.2/package/package.json not in flight; writing
+623 silly cache afterAdd ecdsa-sig-formatter@1.0.9
+624 verbose afterAdd /home/shlomi/.npm/ecdsa-sig-formatter/1.0.9/package/package.json not in flight; writing
+625 silly cache afterAdd jwa@1.1.5
+626 verbose afterAdd /home/shlomi/.npm/jwa/1.1.5/package/package.json not in flight; writing
+627 verbose afterAdd /home/shlomi/.npm/lodash.once/4.1.1/package/package.json written
+628 http fetch 200 https://registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+629 http fetch 200 https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+630 verbose afterAdd /home/shlomi/.npm/dom-storage/2.0.2/package/package.json written
+631 verbose afterAdd /home/shlomi/.npm/ecdsa-sig-formatter/1.0.9/package/package.json written
+632 silly gunzTarPerm extractEntry .travis.yml
+633 silly gunzTarPerm modified mode [ '.travis.yml', 493, 509 ]
+634 silly gunzTarPerm extractEntry lib/index.js
+635 silly gunzTarPerm modified mode [ 'lib/index.js', 493, 509 ]
+636 verbose afterAdd /home/shlomi/.npm/jwa/1.1.5/package/package.json written
+637 http fetch 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+638 silly gunzTarPerm extractEntry LICENCE
+639 silly gunzTarPerm extractEntry immutable.js
+640 http fetch 200 https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+641 silly fetchAndShaCheck shasum 67fe075c5c24fef39f9d65f5f7b7fe75171968fc
+642 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz not in flight; adding
+643 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+644 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz
+645 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-2697e565
+646 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-2697e565 is being purged
+647 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-2697e565
+648 silly gunzTarPerm modes [ '775', '664' ]
+649 silly fetchAndShaCheck shasum 5cb2556ceb85f4373c6d8238aa691c8454e13a36
+650 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz not in flight; adding
+651 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+652 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/websocket-driver/-/websocket-driver-0.6.5.tgz
+653 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-052150fb
+654 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-052150fb is being purged
+655 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-052150fb
+656 silly gunzTarPerm modes [ '775', '664' ]
+657 silly fetchAndShaCheck shasum d263ca54696cd8a306b5ca6551e92de57918fbe7
+658 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz not in flight; adding
+659 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+660 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/safe-buffer/-/safe-buffer-5.0.1.tgz
+661 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-8ec07696
+662 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-8ec07696 is being purged
+663 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-8ec07696
+664 silly gunzTarPerm extractEntry API.md
+665 silly gunzTarPerm modified mode [ 'API.md', 493, 509 ]
+666 silly gunzTarPerm extractEntry test/index.js
+667 silly gunzTarPerm modified mode [ 'test/index.js', 493, 509 ]
+668 silly gunzTarPerm modes [ '775', '664' ]
+669 silly gunzTarPerm extractEntry mutable.js
+670 silly gunzTarPerm extractEntry test.js
+671 silly gunzTarPerm extractEntry package.json
+672 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+673 silly fetchAndShaCheck shasum 482a505b0df0ae626b969866d3bd740cdb962e83
+674 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz not in flight; adding
+675 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+676 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/faye-websocket/-/faye-websocket-0.9.3.tgz
+677 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-750aaaad
+678 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-750aaaad is being purged
+679 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-750aaaad
+680 silly gunzTarPerm modes [ '775', '664' ]
+681 silly gunzTarPerm extractEntry package.json
+682 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+683 silly gunzTarPerm extractEntry package.json
+684 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+685 silly gunzTarPerm extractEntry .npmignore
+686 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+687 silly gunzTarPerm extractEntry README.md
+688 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+689 silly gunzTarPerm extractEntry README.md
+690 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+691 silly gunzTarPerm extractEntry CHANGELOG.md
+692 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+693 silly fetchAndShaCheck shasum be03df8cc3e29de4d2c5df6501263f1fa4595e9a
+694 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/isemail/-/isemail-1.2.0.tgz not in flight; adding
+695 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+696 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/isemail/-/isemail-1.2.0.tgz
+697 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-bb4837f0
+698 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-bb4837f0 is being purged
+699 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-bb4837f0
+700 silly gunzTarPerm extractEntry .jshintrc
+701 silly gunzTarPerm extractEntry Makefile
+702 silly gunzTarPerm modes [ '775', '664' ]
+703 silly cache afterAdd ms@0.7.3
+704 verbose afterAdd /home/shlomi/.npm/ms/0.7.3/package/package.json not in flight; writing
+705 silly gunzTarPerm extractEntry README.md
+706 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+707 silly gunzTarPerm extractEntry LICENSE
+708 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+709 silly gunzTarPerm extractEntry browser.js
+710 silly gunzTarPerm modified mode [ 'browser.js', 420, 436 ]
+711 silly gunzTarPerm extractEntry index.js
+712 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+713 silly gunzTarPerm extractEntry test.js
+714 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+715 silly gunzTarPerm extractEntry .travis.yml
+716 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+717 silly gunzTarPerm extractEntry package.json
+718 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+719 http fetch 200 https://registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+720 silly gunzTarPerm extractEntry README.md
+721 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+722 silly gunzTarPerm extractEntry CHANGELOG.md
+723 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+724 verbose afterAdd /home/shlomi/.npm/ms/0.7.3/package/package.json written
+725 silly gunzTarPerm extractEntry package.json
+726 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+727 silly gunzTarPerm extractEntry LICENSE
+728 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+729 silly gunzTarPerm extractEntry .jshintrc
+730 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+731 silly gunzTarPerm extractEntry CODE_OF_CONDUCT.md
+732 silly gunzTarPerm modified mode [ 'CODE_OF_CONDUCT.md', 420, 436 ]
+733 silly gunzTarPerm extractEntry .npmignore
+734 silly gunzTarPerm modified mode [ '.npmignore', 438, 436 ]
+735 silly gunzTarPerm extractEntry README.md
+736 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+737 silly gunzTarPerm extractEntry examples/autobahn_client.js
+738 silly gunzTarPerm modified mode [ 'examples/autobahn_client.js', 420, 436 ]
+739 silly gunzTarPerm extractEntry lib/XMLHttpRequest.js
+740 silly gunzTarPerm modified mode [ 'lib/XMLHttpRequest.js', 420, 436 ]
+741 silly fetchAndShaCheck shasum 76899499c184b6ef754377c2dbb0cd6cb55d29e7
+742 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz not in flight; adding
+743 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+744 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/websocket-extensions/-/websocket-extensions-0.1.1.tgz
+745 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-cd0d9935
+746 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-cd0d9935 is being purged
+747 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-cd0d9935
+748 silly gunzTarPerm modes [ '775', '664' ]
+749 silly gunzTarPerm extractEntry examples/tcp_server.js
+750 silly gunzTarPerm modified mode [ 'examples/tcp_server.js', 420, 436 ]
+751 silly gunzTarPerm extractEntry lib/websocket/driver.js
+752 silly gunzTarPerm modified mode [ 'lib/websocket/driver.js', 420, 436 ]
+753 silly gunzTarPerm extractEntry LICENSE
+754 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+755 silly gunzTarPerm extractEntry index.js
+756 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+757 silly gunzTarPerm extractEntry examples/client.js
+758 silly gunzTarPerm modified mode [ 'examples/client.js', 420, 436 ]
+759 silly gunzTarPerm extractEntry examples/proxy_server.js
+760 silly gunzTarPerm modified mode [ 'examples/proxy_server.js', 420, 436 ]
+761 silly gunzTarPerm extractEntry package.json
+762 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+763 silly gunzTarPerm extractEntry lib/websocket/http_parser.js
+764 silly gunzTarPerm modified mode [ 'lib/websocket/http_parser.js', 420, 436 ]
+765 silly gunzTarPerm extractEntry lib/websocket/streams.js
+766 silly gunzTarPerm modified mode [ 'lib/websocket/streams.js', 420, 436 ]
+767 silly gunzTarPerm extractEntry README.md
+768 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+769 silly gunzTarPerm extractEntry CHANGELOG.md
+770 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+771 silly gunzTarPerm extractEntry lib/parser.js
+772 silly gunzTarPerm modified mode [ 'lib/parser.js', 420, 436 ]
+773 silly gunzTarPerm extractEntry lib/websocket_extensions.js
+774 silly gunzTarPerm modified mode [ 'lib/websocket_extensions.js', 420, 436 ]
+775 silly gunzTarPerm extractEntry lib/pipeline/README.md
+776 silly gunzTarPerm modified mode [ 'lib/pipeline/README.md', 420, 436 ]
+777 silly gunzTarPerm extractEntry lib/pipeline/cell.js
+778 silly gunzTarPerm modified mode [ 'lib/pipeline/cell.js', 420, 436 ]
+779 silly gunzTarPerm extractEntry lib/pipeline/functor.js
+780 silly gunzTarPerm modified mode [ 'lib/pipeline/functor.js', 420, 436 ]
+781 silly gunzTarPerm extractEntry lib/pipeline/index.js
+782 silly gunzTarPerm modified mode [ 'lib/pipeline/index.js', 420, 436 ]
+783 silly gunzTarPerm extractEntry lib/pipeline/pledge.js
+784 silly gunzTarPerm modified mode [ 'lib/pipeline/pledge.js', 420, 436 ]
+785 silly gunzTarPerm extractEntry lib/pipeline/ring_buffer.js
+786 silly gunzTarPerm modified mode [ 'lib/pipeline/ring_buffer.js', 420, 436 ]
+787 silly gunzTarPerm extractEntry .travis.yml
+788 silly gunzTarPerm modified mode [ '.travis.yml', 438, 436 ]
+789 silly gunzTarPerm extractEntry Makefile
+790 silly gunzTarPerm modified mode [ 'Makefile', 438, 436 ]
+791 silly cache afterAdd jws@3.1.4
+792 verbose afterAdd /home/shlomi/.npm/jws/3.1.4/package/package.json not in flight; writing
+793 silly gunzTarPerm extractEntry examples/server.js
+794 silly gunzTarPerm modified mode [ 'examples/server.js', 420, 436 ]
+795 silly gunzTarPerm extractEntry examples/haproxy.conf
+796 silly gunzTarPerm modified mode [ 'examples/haproxy.conf', 420, 436 ]
+797 silly fetchAndShaCheck shasum 515bf2bba070ec615bad97fd2e945027eb476946
+798 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz not in flight; adding
+799 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+800 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-7.4.0.tgz
+801 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-6d02fa48
+802 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-6d02fa48 is being purged
+803 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-6d02fa48
+804 silly gunzTarPerm modes [ '775', '664' ]
+805 silly gunzTarPerm extractEntry lib/websocket/driver/base.js
+806 silly gunzTarPerm modified mode [ 'lib/websocket/driver/base.js', 420, 436 ]
+807 silly gunzTarPerm extractEntry lib/websocket/driver/client.js
+808 silly gunzTarPerm modified mode [ 'lib/websocket/driver/client.js', 420, 436 ]
+809 verbose afterAdd /home/shlomi/.npm/jws/3.1.4/package/package.json written
+810 silly fetchAndShaCheck shasum 20bb7403d3cea398e91dc4710a8ff1b8274a25ed
+811 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/hoek/-/hoek-2.16.3.tgz not in flight; adding
+812 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+813 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/hoek/-/hoek-2.16.3.tgz
+814 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-31e1e206
+815 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-31e1e206 is being purged
+816 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-31e1e206
+817 silly gunzTarPerm extractEntry lib/isemail.js
+818 silly gunzTarPerm modified mode [ 'lib/isemail.js', 438, 436 ]
+819 silly gunzTarPerm extractEntry test/isemail.js
+820 silly gunzTarPerm modified mode [ 'test/isemail.js', 438, 436 ]
+821 silly gunzTarPerm extractEntry test/mocha.opts
+822 silly gunzTarPerm modified mode [ 'test/mocha.opts', 438, 436 ]
+823 silly gunzTarPerm extractEntry test/tests.json
+824 silly gunzTarPerm modified mode [ 'test/tests.json', 438, 436 ]
+825 silly gunzTarPerm modes [ '775', '664' ]
+826 silly gunzTarPerm extractEntry package.json
+827 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+828 silly gunzTarPerm extractEntry examples/sse.html
+829 silly gunzTarPerm modified mode [ 'examples/sse.html', 420, 436 ]
+830 silly gunzTarPerm extractEntry examples/ws.html
+831 silly gunzTarPerm modified mode [ 'examples/ws.html', 420, 436 ]
+832 silly gunzTarPerm extractEntry .npmignore
+833 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+834 silly gunzTarPerm extractEntry README.md
+835 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+836 silly gunzTarPerm extractEntry package.json
+837 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+838 silly gunzTarPerm extractEntry lib/websocket/driver/draft75.js
+839 silly gunzTarPerm modified mode [ 'lib/websocket/driver/draft75.js', 420, 436 ]
+840 silly gunzTarPerm extractEntry lib/websocket/driver/draft76.js
+841 silly gunzTarPerm modified mode [ 'lib/websocket/driver/draft76.js', 420, 436 ]
+842 silly gunzTarPerm extractEntry .npmignore
+843 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+844 silly gunzTarPerm extractEntry README.md
+845 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+846 silly gunzTarPerm extractEntry lib/faye/eventsource.js
+847 silly gunzTarPerm modified mode [ 'lib/faye/eventsource.js', 420, 436 ]
+848 silly gunzTarPerm extractEntry lib/faye/websocket.js
+849 silly gunzTarPerm modified mode [ 'lib/faye/websocket.js', 420, 436 ]
+850 silly gunzTarPerm extractEntry LICENSE
+851 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+852 silly gunzTarPerm extractEntry verify.js
+853 silly gunzTarPerm modified mode [ 'verify.js', 420, 436 ]
+854 silly gunzTarPerm extractEntry LICENSE
+855 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+856 silly gunzTarPerm extractEntry lib/websocket/driver/headers.js
+857 silly gunzTarPerm modified mode [ 'lib/websocket/driver/headers.js', 420, 436 ]
+858 silly gunzTarPerm extractEntry lib/websocket/driver/hybi.js
+859 silly gunzTarPerm modified mode [ 'lib/websocket/driver/hybi.js', 420, 436 ]
+860 silly gunzTarPerm extractEntry lib/faye/websocket/api.js
+861 silly gunzTarPerm modified mode [ 'lib/faye/websocket/api.js', 420, 436 ]
+862 silly gunzTarPerm extractEntry lib/faye/websocket/client.js
+863 silly gunzTarPerm modified mode [ 'lib/faye/websocket/client.js', 420, 436 ]
+864 silly gunzTarPerm extractEntry decode.js
+865 silly gunzTarPerm modified mode [ 'decode.js', 420, 436 ]
+866 silly gunzTarPerm extractEntry .travis.yml
+867 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+868 silly gunzTarPerm extractEntry images/hoek.png
+869 silly gunzTarPerm modified mode [ 'images/hoek.png', 420, 436 ]
+870 silly gunzTarPerm extractEntry lib/escape.js
+871 silly gunzTarPerm modified mode [ 'lib/escape.js', 420, 436 ]
+872 silly gunzTarPerm extractEntry lib/websocket/driver/proxy.js
+873 silly gunzTarPerm modified mode [ 'lib/websocket/driver/proxy.js', 420, 436 ]
+874 silly gunzTarPerm extractEntry lib/websocket/driver/server.js
+875 silly gunzTarPerm modified mode [ 'lib/websocket/driver/server.js', 420, 436 ]
+876 silly gunzTarPerm extractEntry lib/faye/websocket/api/event.js
+877 silly gunzTarPerm modified mode [ 'lib/faye/websocket/api/event.js', 420, 436 ]
+878 silly gunzTarPerm extractEntry lib/faye/websocket/api/event_target.js
+879 silly gunzTarPerm modified mode [ 'lib/faye/websocket/api/event_target.js', 420, 436 ]
+880 silly cache afterAdd promise-polyfill@6.0.2
+881 verbose afterAdd /home/shlomi/.npm/promise-polyfill/6.0.2/package/package.json not in flight; writing
+882 silly gunzTarPerm extractEntry index.js
+883 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+884 silly gunzTarPerm extractEntry sign.js
+885 silly gunzTarPerm modified mode [ 'sign.js', 420, 436 ]
+886 silly gunzTarPerm extractEntry lib/index.js
+887 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+888 silly gunzTarPerm extractEntry CONTRIBUTING.md
+889 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 436 ]
+890 verbose afterAdd /home/shlomi/.npm/promise-polyfill/6.0.2/package/package.json written
+891 silly gunzTarPerm extractEntry lib/websocket/driver/stream_reader.js
+892 silly gunzTarPerm modified mode [ 'lib/websocket/driver/stream_reader.js', 420, 436 ]
+893 silly gunzTarPerm extractEntry lib/websocket/driver/hybi/frame.js
+894 silly gunzTarPerm modified mode [ 'lib/websocket/driver/hybi/frame.js', 420, 436 ]
+895 silly gunzTarPerm extractEntry .jshintrc
+896 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+897 silly gunzTarPerm extractEntry .travis.yml
+898 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+899 silly cache afterAdd xtend@4.0.1
+900 verbose afterAdd /home/shlomi/.npm/xtend/4.0.1/package/package.json not in flight; writing
+901 silly gunzTarPerm extractEntry test/escaper.js
+902 silly gunzTarPerm modified mode [ 'test/escaper.js', 420, 436 ]
+903 silly gunzTarPerm extractEntry test/index.js
+904 silly gunzTarPerm modified mode [ 'test/index.js', 420, 436 ]
+905 silly cache afterAdd topo@1.1.0
+906 verbose afterAdd /home/shlomi/.npm/topo/1.1.0/package/package.json not in flight; writing
+907 silly cache afterAdd xmlhttprequest@1.8.0
+908 verbose afterAdd /home/shlomi/.npm/xmlhttprequest/1.8.0/package/package.json not in flight; writing
+909 verbose afterAdd /home/shlomi/.npm/xtend/4.0.1/package/package.json written
+910 silly gunzTarPerm extractEntry lib/websocket/driver/hybi/message.js
+911 silly gunzTarPerm modified mode [ 'lib/websocket/driver/hybi/message.js', 420, 436 ]
+912 verbose afterAdd /home/shlomi/.npm/topo/1.1.0/package/package.json written
+913 silly gunzTarPerm extractEntry CHANGELOG.md
+914 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+915 silly gunzTarPerm extractEntry lib/JsonWebTokenError.js
+916 silly gunzTarPerm modified mode [ 'lib/JsonWebTokenError.js', 420, 436 ]
+917 silly gunzTarPerm extractEntry test/modules/test1.js
+918 silly gunzTarPerm modified mode [ 'test/modules/test1.js', 420, 436 ]
+919 silly gunzTarPerm extractEntry test/modules/test2.js
+920 silly gunzTarPerm modified mode [ 'test/modules/test2.js', 420, 436 ]
+921 silly gunzTarPerm extractEntry test/modules/test3.js
+922 silly gunzTarPerm modified mode [ 'test/modules/test3.js', 420, 436 ]
+923 verbose afterAdd /home/shlomi/.npm/xmlhttprequest/1.8.0/package/package.json written
+924 silly gunzTarPerm extractEntry test/modules/ignore.txt
+925 silly gunzTarPerm modified mode [ 'test/modules/ignore.txt', 420, 436 ]
+926 silly cache afterAdd safe-buffer@5.0.1
+927 verbose afterAdd /home/shlomi/.npm/safe-buffer/5.0.1/package/package.json not in flight; writing
+928 silly gunzTarPerm extractEntry lib/NotBeforeError.js
+929 silly gunzTarPerm modified mode [ 'lib/NotBeforeError.js', 420, 436 ]
+930 silly gunzTarPerm extractEntry lib/TokenExpiredError.js
+931 silly gunzTarPerm modified mode [ 'lib/TokenExpiredError.js', 420, 436 ]
+932 verbose afterAdd /home/shlomi/.npm/safe-buffer/5.0.1/package/package.json written
+933 silly gunzTarPerm extractEntry lib/timespan.js
+934 silly gunzTarPerm modified mode [ 'lib/timespan.js', 420, 436 ]
+935 silly gunzTarPerm extractEntry test/async_sign.tests.js
+936 silly gunzTarPerm modified mode [ 'test/async_sign.tests.js', 420, 436 ]
+937 silly gunzTarPerm extractEntry test/verify.tests.js
+938 silly gunzTarPerm modified mode [ 'test/verify.tests.js', 420, 436 ]
+939 silly gunzTarPerm extractEntry test/issue_147.tests.js
+940 silly gunzTarPerm modified mode [ 'test/issue_147.tests.js', 420, 436 ]
+941 silly gunzTarPerm extractEntry test/issue_196.tests.js
+942 silly gunzTarPerm modified mode [ 'test/issue_196.tests.js', 420, 436 ]
+943 silly gunzTarPerm extractEntry test/issue_304.tests.js
+944 silly gunzTarPerm modified mode [ 'test/issue_304.tests.js', 420, 436 ]
+945 silly gunzTarPerm extractEntry test/invalid_exp.tests.js
+946 silly gunzTarPerm modified mode [ 'test/invalid_exp.tests.js', 420, 436 ]
+947 silly gunzTarPerm extractEntry test/jwt.hs.tests.js
+948 silly gunzTarPerm modified mode [ 'test/jwt.hs.tests.js', 420, 436 ]
+949 silly gunzTarPerm extractEntry test/jwt.rs.tests.js
+950 silly gunzTarPerm modified mode [ 'test/jwt.rs.tests.js', 420, 436 ]
+951 silly fetchAndShaCheck shasum 4d50c318079122000fe5f16af1ff8e1917b77e06
+952 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/joi/-/joi-6.10.1.tgz not in flight; adding
+953 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/joi/-/joi-6.10.1.tgz
+954 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/joi/-/joi-6.10.1.tgz
+955 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-74e71c27
+956 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-74e71c27 is being purged
+957 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-74e71c27
+958 silly gunzTarPerm extractEntry test/buffer.tests.js
+959 silly gunzTarPerm modified mode [ 'test/buffer.tests.js', 420, 436 ]
+960 silly gunzTarPerm modes [ '775', '664' ]
+961 silly gunzTarPerm extractEntry package.json
+962 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+963 silly gunzTarPerm extractEntry test/noTimestamp.tests.js
+964 silly gunzTarPerm modified mode [ 'test/noTimestamp.tests.js', 420, 436 ]
+965 silly gunzTarPerm extractEntry test/non_object_values.tests.js
+966 silly gunzTarPerm modified mode [ 'test/non_object_values.tests.js', 420, 436 ]
+967 silly gunzTarPerm extractEntry .npmignore
+968 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+969 silly gunzTarPerm extractEntry README.md
+970 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+971 silly gunzTarPerm extractEntry test/iat.tests.js
+972 silly gunzTarPerm modified mode [ 'test/iat.tests.js', 420, 436 ]
+973 silly gunzTarPerm extractEntry test/undefined_secretOrPublickey.tests.js
+974 silly gunzTarPerm modified mode [ 'test/undefined_secretOrPublickey.tests.js', 420, 436 ]
+975 silly cache afterAdd isemail@1.2.0
+976 verbose afterAdd /home/shlomi/.npm/isemail/1.2.0/package/package.json not in flight; writing
+977 silly gunzTarPerm extractEntry LICENSE
+978 silly gunzTarPerm modified mode [ 'LICENSE', 493, 509 ]
+979 silly gunzTarPerm extractEntry generate-readme-toc.js
+980 silly gunzTarPerm modified mode [ 'generate-readme-toc.js', 420, 436 ]
+981 verbose afterAdd /home/shlomi/.npm/isemail/1.2.0/package/package.json written
+982 silly gunzTarPerm extractEntry test/expires_format.tests.js
+983 silly gunzTarPerm modified mode [ 'test/expires_format.tests.js', 420, 436 ]
+984 silly gunzTarPerm extractEntry test/set_headers.tests.js
+985 silly gunzTarPerm modified mode [ 'test/set_headers.tests.js', 420, 436 ]
+986 silly gunzTarPerm extractEntry .eslintignore
+987 silly gunzTarPerm modified mode [ '.eslintignore', 420, 436 ]
+988 silly gunzTarPerm extractEntry examples/conditionalRequire.js
+989 silly gunzTarPerm modified mode [ 'examples/conditionalRequire.js', 420, 436 ]
+990 silly gunzTarPerm extractEntry test/encoding.tests.js
+991 silly gunzTarPerm modified mode [ 'test/encoding.tests.js', 420, 436 ]
+992 silly gunzTarPerm extractEntry test/rsa-public-key.tests.js
+993 silly gunzTarPerm modified mode [ 'test/rsa-public-key.tests.js', 420, 436 ]
+994 silly cache afterAdd websocket-extensions@0.1.1
+995 verbose afterAdd /home/shlomi/.npm/websocket-extensions/0.1.1/package/package.json not in flight; writing
+996 silly gunzTarPerm extractEntry examples/customMessage.js
+997 silly gunzTarPerm modified mode [ 'examples/customMessage.js', 493, 509 ]
+998 silly gunzTarPerm extractEntry examples/multipleWhen.js
+999 silly gunzTarPerm modified mode [ 'examples/multipleWhen.js', 493, 509 ]
+1000 silly gunzTarPerm extractEntry test/issue_70.tests.js
+1001 silly gunzTarPerm modified mode [ 'test/issue_70.tests.js', 420, 436 ]
+1002 silly gunzTarPerm extractEntry test/wrong_alg.tests.js
+1003 silly gunzTarPerm modified mode [ 'test/wrong_alg.tests.js', 420, 436 ]
+1004 verbose afterAdd /home/shlomi/.npm/websocket-extensions/0.1.1/package/package.json written
+1005 silly gunzTarPerm extractEntry .travis.yml
+1006 silly gunzTarPerm modified mode [ '.travis.yml', 493, 509 ]
+1007 silly gunzTarPerm extractEntry test/keyid.tests.js
+1008 silly gunzTarPerm modified mode [ 'test/keyid.tests.js', 420, 436 ]
+1009 silly gunzTarPerm extractEntry test/rsa-public-key.pem
+1010 silly gunzTarPerm modified mode [ 'test/rsa-public-key.pem', 420, 436 ]
+1011 silly gunzTarPerm extractEntry images/joi.png
+1012 silly gunzTarPerm extractEntry images/validation.png
+1013 silly gunzTarPerm extractEntry test/rsa-private.pem
+1014 silly gunzTarPerm modified mode [ 'test/rsa-private.pem', 420, 436 ]
+1015 silly gunzTarPerm extractEntry test/rsa-public.pem
+1016 silly gunzTarPerm modified mode [ 'test/rsa-public.pem', 420, 436 ]
+1017 silly gunzTarPerm extractEntry lib/alternatives.js
+1018 silly gunzTarPerm modified mode [ 'lib/alternatives.js', 493, 509 ]
+1019 silly cache afterAdd faye-websocket@0.9.3
+1020 verbose afterAdd /home/shlomi/.npm/faye-websocket/0.9.3/package/package.json not in flight; writing
+1021 silly gunzTarPerm extractEntry test/pub.pem
+1022 silly gunzTarPerm modified mode [ 'test/pub.pem', 420, 436 ]
+1023 silly gunzTarPerm extractEntry test/priv.pem
+1024 silly gunzTarPerm modified mode [ 'test/priv.pem', 420, 436 ]
+1025 silly gunzTarPerm extractEntry lib/binary.js
+1026 silly gunzTarPerm modified mode [ 'lib/binary.js', 493, 509 ]
+1027 silly gunzTarPerm extractEntry lib/boolean.js
+1028 silly gunzTarPerm modified mode [ 'lib/boolean.js', 493, 509 ]
+1029 verbose afterAdd /home/shlomi/.npm/faye-websocket/0.9.3/package/package.json written
+1030 silly gunzTarPerm extractEntry test/util/fakeDate.js
+1031 silly gunzTarPerm modified mode [ 'test/util/fakeDate.js', 420, 436 ]
+1032 silly gunzTarPerm extractEntry test/invalid_pub.pem
+1033 silly gunzTarPerm modified mode [ 'test/invalid_pub.pem', 420, 436 ]
+1034 silly gunzTarPerm extractEntry lib/cast.js
+1035 silly gunzTarPerm modified mode [ 'lib/cast.js', 493, 509 ]
+1036 silly gunzTarPerm extractEntry lib/date.js
+1037 silly gunzTarPerm modified mode [ 'lib/date.js', 493, 509 ]
+1038 silly gunzTarPerm extractEntry .history/verify_20170327175706.js
+1039 silly gunzTarPerm modified mode [ '.history/verify_20170327175706.js', 420, 436 ]
+1040 silly gunzTarPerm extractEntry .history/verify_20170327175426.js
+1041 silly gunzTarPerm modified mode [ '.history/verify_20170327175426.js', 420, 436 ]
+1042 silly cache afterAdd websocket-driver@0.6.5
+1043 verbose afterAdd /home/shlomi/.npm/websocket-driver/0.6.5/package/package.json not in flight; writing
+1044 silly gunzTarPerm extractEntry lib/array.js
+1045 silly gunzTarPerm modified mode [ 'lib/array.js', 493, 509 ]
+1046 silly gunzTarPerm extractEntry lib/index.js
+1047 silly gunzTarPerm modified mode [ 'lib/index.js', 493, 509 ]
+1048 silly gunzTarPerm extractEntry .history/verify_20170327175344.js
+1049 silly gunzTarPerm modified mode [ '.history/verify_20170327175344.js', 420, 436 ]
+1050 silly gunzTarPerm extractEntry .history/verify_2017011305435.js
+1051 silly gunzTarPerm modified mode [ '.history/verify_2017011305435.js', 420, 436 ]
+1052 verbose afterAdd /home/shlomi/.npm/websocket-driver/0.6.5/package/package.json written
+1053 silly cache afterAdd hoek@2.16.3
+1054 verbose afterAdd /home/shlomi/.npm/hoek/2.16.3/package/package.json not in flight; writing
+1055 silly gunzTarPerm extractEntry lib/language.js
+1056 silly gunzTarPerm modified mode [ 'lib/language.js', 493, 509 ]
+1057 silly gunzTarPerm extractEntry lib/number.js
+1058 silly gunzTarPerm modified mode [ 'lib/number.js', 493, 509 ]
+1059 silly gunzTarPerm extractEntry lib/object.js
+1060 silly gunzTarPerm modified mode [ 'lib/object.js', 493, 509 ]
+1061 silly gunzTarPerm extractEntry lib/ref.js
+1062 silly gunzTarPerm modified mode [ 'lib/ref.js', 493, 509 ]
+1063 verbose afterAdd /home/shlomi/.npm/hoek/2.16.3/package/package.json written
+1064 silly gunzTarPerm extractEntry .history/verify_2017011305133.js
+1065 silly gunzTarPerm modified mode [ '.history/verify_2017011305133.js', 420, 436 ]
+1066 silly gunzTarPerm extractEntry .history/verify_20170327175443.js
+1067 silly gunzTarPerm modified mode [ '.history/verify_20170327175443.js', 420, 436 ]
+1068 silly gunzTarPerm extractEntry lib/any.js
+1069 silly gunzTarPerm modified mode [ 'lib/any.js', 493, 509 ]
+1070 silly gunzTarPerm extractEntry lib/string.js
+1071 silly gunzTarPerm modified mode [ 'lib/string.js', 493, 509 ]
+1072 silly gunzTarPerm extractEntry lib/errors.js
+1073 silly gunzTarPerm modified mode [ 'lib/errors.js', 493, 509 ]
+1074 silly gunzTarPerm extractEntry .history/sign_20170308140651.js
+1075 silly gunzTarPerm modified mode [ '.history/sign_20170308140651.js', 420, 436 ]
+1076 silly gunzTarPerm extractEntry .history/sign_20170308134646.js
+1077 silly gunzTarPerm modified mode [ '.history/sign_20170308134646.js', 420, 436 ]
+1078 silly gunzTarPerm extractEntry lib/string/ip.js
+1079 silly gunzTarPerm modified mode [ 'lib/string/ip.js', 420, 436 ]
+1080 silly gunzTarPerm extractEntry lib/string/rfc3986.js
+1081 silly gunzTarPerm modified mode [ 'lib/string/rfc3986.js', 420, 436 ]
+1082 silly gunzTarPerm extractEntry lib/string/uri.js
+1083 silly gunzTarPerm modified mode [ 'lib/string/uri.js', 420, 436 ]
+1084 silly gunzTarPerm extractEntry API.md
+1085 silly gunzTarPerm modified mode [ 'API.md', 493, 509 ]
+1086 silly gunzTarPerm extractEntry .history/sign_20170308134619.js
+1087 silly gunzTarPerm modified mode [ '.history/sign_20170308134619.js', 420, 436 ]
+1088 silly gunzTarPerm extractEntry .history/sign_20170216133031.js
+1089 silly gunzTarPerm modified mode [ '.history/sign_20170216133031.js', 420, 436 ]
+1090 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1091 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 493, 509 ]
+1092 silly gunzTarPerm extractEntry test/alternatives.js
+1093 silly gunzTarPerm modified mode [ 'test/alternatives.js', 493, 509 ]
+1094 silly gunzTarPerm extractEntry test/binary.js
+1095 silly gunzTarPerm modified mode [ 'test/binary.js', 493, 509 ]
+1096 silly gunzTarPerm extractEntry .history/sign_2017011304615.js
+1097 silly gunzTarPerm modified mode [ '.history/sign_2017011304615.js', 420, 436 ]
+1098 silly gunzTarPerm extractEntry .history/verify_2017011304950.js
+1099 silly gunzTarPerm modified mode [ '.history/verify_2017011304950.js', 420, 436 ]
+1100 silly gunzTarPerm extractEntry test/boolean.js
+1101 silly gunzTarPerm modified mode [ 'test/boolean.js', 493, 509 ]
+1102 silly gunzTarPerm extractEntry test/date.js
+1103 silly gunzTarPerm modified mode [ 'test/date.js', 493, 509 ]
+1104 silly gunzTarPerm extractEntry .history/sign_2017011304458.js
+1105 silly gunzTarPerm modified mode [ '.history/sign_2017011304458.js', 420, 436 ]
+1106 silly gunzTarPerm extractEntry .history/test/async_sign.tests_20170308134859.js
+1107 silly gunzTarPerm modified mode [ '.history/test/async_sign.tests_20170308134859.js', 420, 436 ]
+1108 silly fetchAndShaCheck shasum c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f
+1109 verbose addTmpTarball /tmp/npm-20081-f2ad963c/registry.npmjs.org/moment/-/moment-2.18.1.tgz not in flight; adding
+1110 verbose addTmpTarball validating metadata from /tmp/npm-20081-f2ad963c/registry.npmjs.org/moment/-/moment-2.18.1.tgz
+1111 verbose tar unpack /tmp/npm-20081-f2ad963c/registry.npmjs.org/moment/-/moment-2.18.1.tgz
+1112 verbose tar unpacking to /tmp/npm-20081-f2ad963c/unpack-dff32fe0
+1113 silly gentlyRm /tmp/npm-20081-f2ad963c/unpack-dff32fe0 is being purged
+1114 verbose gentlyRm don't care about contents; nuking /tmp/npm-20081-f2ad963c/unpack-dff32fe0
+1115 silly gunzTarPerm modes [ '775', '664' ]
+1116 silly gunzTarPerm extractEntry test/errors.js
+1117 silly gunzTarPerm modified mode [ 'test/errors.js', 493, 509 ]
+1118 silly gunzTarPerm extractEntry test/array.js
+1119 silly gunzTarPerm modified mode [ 'test/array.js', 493, 509 ]
+1120 silly gunzTarPerm extractEntry .history/test/async_sign.tests_20170308135641.js
+1121 silly gunzTarPerm modified mode [ '.history/test/async_sign.tests_20170308135641.js', 420, 436 ]
+1122 silly gunzTarPerm extractEntry .history/test/issue_196.tests_20170206184753.js
+1123 silly gunzTarPerm modified mode [ '.history/test/issue_196.tests_20170206184753.js', 420, 436 ]
+1124 silly gunzTarPerm extractEntry package.json
+1125 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+1126 silly gunzTarPerm extractEntry test/helper.js
+1127 silly gunzTarPerm modified mode [ 'test/helper.js', 493, 509 ]
+1128 silly gunzTarPerm extractEntry test/index.js
+1129 silly gunzTarPerm modified mode [ 'test/index.js', 493, 509 ]
+1130 silly gunzTarPerm extractEntry README.md
+1131 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1132 silly gunzTarPerm extractEntry LICENSE
+1133 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1134 silly gunzTarPerm extractEntry .history/test/issue_70.tests_20170321165837.js
+1135 silly gunzTarPerm modified mode [ '.history/test/issue_70.tests_20170321165837.js', 420, 436 ]
+1136 silly gunzTarPerm extractEntry .history/test/issue_70.tests_20170321165848.js
+1137 silly gunzTarPerm modified mode [ '.history/test/issue_70.tests_20170321165848.js', 420, 436 ]
+1138 silly gunzTarPerm extractEntry test/number.js
+1139 silly gunzTarPerm modified mode [ 'test/number.js', 493, 509 ]
+1140 silly gunzTarPerm extractEntry ender.js
+1141 silly gunzTarPerm modified mode [ 'ender.js', 420, 436 ]
+1142 silly gunzTarPerm extractEntry moment.js
+1143 silly gunzTarPerm modified mode [ 'moment.js', 420, 436 ]
+1144 silly gunzTarPerm extractEntry .history/test/jwt.hs.tests_20170308135416.js
+1145 silly gunzTarPerm modified mode [ '.history/test/jwt.hs.tests_20170308135416.js', 420, 436 ]
+1146 silly gunzTarPerm extractEntry .history/test/jwt.hs.tests_20170308135605.js
+1147 silly gunzTarPerm modified mode [ '.history/test/jwt.hs.tests_20170308135605.js', 420, 436 ]
+1148 silly gunzTarPerm extractEntry test/object.js
+1149 silly gunzTarPerm modified mode [ 'test/object.js', 420, 436 ]
+1150 silly gunzTarPerm extractEntry test/ref.js
+1151 silly gunzTarPerm modified mode [ 'test/ref.js', 493, 509 ]
+1152 silly gunzTarPerm extractEntry .history/test/jwt.hs.tests_20170308135831.js
+1153 silly gunzTarPerm modified mode [ '.history/test/jwt.hs.tests_20170308135831.js', 420, 436 ]
+1154 silly gunzTarPerm extractEntry .history/test/jwt.hs.tests_20170308140535.js
+1155 silly gunzTarPerm modified mode [ '.history/test/jwt.hs.tests_20170308140535.js', 420, 436 ]
+1156 silly gunzTarPerm extractEntry package.js
+1157 silly gunzTarPerm modified mode [ 'package.js', 420, 436 ]
+1158 silly gunzTarPerm extractEntry .history/test/jwt.hs.tests_20170308140747.js
+1159 silly gunzTarPerm modified mode [ '.history/test/jwt.hs.tests_20170308140747.js', 420, 436 ]
+1160 silly gunzTarPerm extractEntry .history/README_20170321172314.md
+1161 silly gunzTarPerm modified mode [ '.history/README_20170321172314.md', 420, 436 ]
+1162 silly gunzTarPerm extractEntry test/any.js
+1163 silly gunzTarPerm modified mode [ 'test/any.js', 493, 509 ]
+1164 silly gunzTarPerm extractEntry test/string.js
+1165 silly gunzTarPerm modified mode [ 'test/string.js', 493, 509 ]
+1166 silly gunzTarPerm extractEntry min/locales.js
+1167 silly gunzTarPerm modified mode [ 'min/locales.js', 420, 436 ]
+1168 silly gunzTarPerm extractEntry .history/README_20170321172244.md
+1169 silly gunzTarPerm modified mode [ '.history/README_20170321172244.md', 420, 436 ]
+1170 silly gunzTarPerm extractEntry .history/README_20170321171847.md
+1171 silly gunzTarPerm modified mode [ '.history/README_20170321171847.md', 420, 436 ]
+1172 silly gunzTarPerm extractEntry test/function.js
+1173 silly gunzTarPerm modified mode [ 'test/function.js', 493, 509 ]
+1174 silly gunzTarPerm extractEntry .history/README_20170321171728.md
+1175 silly gunzTarPerm modified mode [ '.history/README_20170321171728.md', 420, 436 ]
+1176 silly gunzTarPerm extractEntry .history/README_20170321171635.md
+1177 silly gunzTarPerm modified mode [ '.history/README_20170321171635.md', 420, 436 ]
+1178 silly gunzTarPerm extractEntry min/locales.min.js
+1179 silly gunzTarPerm modified mode [ 'min/locales.min.js', 420, 436 ]
+1180 silly gunzTarPerm extractEntry .history/README_20170309190102.md
+1181 silly gunzTarPerm modified mode [ '.history/README_20170309190102.md', 420, 436 ]
+1182 silly gunzTarPerm extractEntry .history/CHANGELOG_20170213194403.md
+1183 silly gunzTarPerm modified mode [ '.history/CHANGELOG_20170213194403.md', 420, 436 ]
+1184 silly gunzTarPerm extractEntry .history/README_20170309185917.md
+1185 silly gunzTarPerm modified mode [ '.history/README_20170309185917.md', 420, 436 ]
+1186 silly gunzTarPerm extractEntry .history/README_20170309185833.md
+1187 silly gunzTarPerm modified mode [ '.history/README_20170309185833.md', 420, 436 ]
+1188 silly gunzTarPerm extractEntry min/moment-with-locales.js
+1189 silly gunzTarPerm modified mode [ 'min/moment-with-locales.js', 420, 436 ]
+1190 silly gunzTarPerm extractEntry .history/README_20170308140601.md
+1191 silly gunzTarPerm modified mode [ '.history/README_20170308140601.md', 420, 436 ]
+1192 silly gunzTarPerm extractEntry .history/CHANGELOG_20170213194730.md
+1193 silly gunzTarPerm modified mode [ '.history/CHANGELOG_20170213194730.md', 420, 436 ]
+1194 silly gunzTarPerm extractEntry .history/CHANGELOG_20170213194602.md
+1195 silly gunzTarPerm modified mode [ '.history/CHANGELOG_20170213194602.md', 420, 436 ]
+1196 silly gunzTarPerm extractEntry .history/CHANGELOG_20170213194453.md
+1197 silly gunzTarPerm modified mode [ '.history/CHANGELOG_20170213194453.md', 420, 436 ]
+1198 silly gunzTarPerm extractEntry .history/CHANGELOG_20170213194220.md
+1199 silly gunzTarPerm modified mode [ '.history/CHANGELOG_20170213194220.md', 420, 436 ]
+1200 silly gunzTarPerm extractEntry bin/changelog
+1201 silly gunzTarPerm modified mode [ 'bin/changelog', 493, 509 ]
+1202 silly gunzTarPerm extractEntry min/moment-with-locales.min.js
+1203 silly gunzTarPerm modified mode [ 'min/moment-with-locales.min.js', 420, 436 ]
+1204 silly gunzTarPerm extractEntry min/moment.min.js
+1205 silly gunzTarPerm modified mode [ 'min/moment.min.js', 420, 436 ]
+1206 silly gunzTarPerm extractEntry locale/af.js
+1207 silly gunzTarPerm modified mode [ 'locale/af.js', 420, 436 ]
+1208 silly gunzTarPerm extractEntry locale/jv.js
+1209 silly gunzTarPerm modified mode [ 'locale/jv.js', 420, 436 ]
+1210 silly gunzTarPerm extractEntry locale/ka.js
+1211 silly gunzTarPerm modified mode [ 'locale/ka.js', 420, 436 ]
+1212 silly gunzTarPerm extractEntry locale/kk.js
+1213 silly gunzTarPerm modified mode [ 'locale/kk.js', 420, 436 ]
+1214 silly gunzTarPerm extractEntry locale/ja.js
+1215 silly gunzTarPerm modified mode [ 'locale/ja.js', 420, 436 ]
+1216 silly gunzTarPerm extractEntry locale/kn.js
+1217 silly gunzTarPerm modified mode [ 'locale/kn.js', 420, 436 ]
+1218 silly gunzTarPerm extractEntry locale/ko.js
+1219 silly gunzTarPerm modified mode [ 'locale/ko.js', 420, 436 ]
+1220 silly gunzTarPerm extractEntry locale/ky.js
+1221 silly gunzTarPerm modified mode [ 'locale/ky.js', 420, 436 ]
+1222 silly gunzTarPerm extractEntry locale/lb.js
+1223 silly gunzTarPerm modified mode [ 'locale/lb.js', 420, 436 ]
+1224 silly gunzTarPerm extractEntry locale/lo.js
+1225 silly gunzTarPerm modified mode [ 'locale/lo.js', 420, 436 ]
+1226 silly gunzTarPerm extractEntry locale/it.js
+1227 silly gunzTarPerm modified mode [ 'locale/it.js', 420, 436 ]
+1228 silly gunzTarPerm extractEntry locale/lt.js
+1229 silly gunzTarPerm modified mode [ 'locale/lt.js', 420, 436 ]
+1230 silly gunzTarPerm extractEntry locale/is.js
+1231 silly gunzTarPerm modified mode [ 'locale/is.js', 420, 436 ]
+1232 silly gunzTarPerm extractEntry locale/lv.js
+1233 silly gunzTarPerm modified mode [ 'locale/lv.js', 420, 436 ]
+1234 silly gunzTarPerm extractEntry locale/id.js
+1235 silly gunzTarPerm modified mode [ 'locale/id.js', 420, 436 ]
+1236 silly gunzTarPerm extractEntry locale/me.js
+1237 silly gunzTarPerm modified mode [ 'locale/me.js', 420, 436 ]
+1238 silly gunzTarPerm extractEntry locale/hy-am.js
+1239 silly gunzTarPerm modified mode [ 'locale/hy-am.js', 420, 436 ]
+1240 silly gunzTarPerm extractEntry locale/mi.js
+1241 silly gunzTarPerm modified mode [ 'locale/mi.js', 420, 436 ]
+1242 silly gunzTarPerm extractEntry locale/hu.js
+1243 silly gunzTarPerm modified mode [ 'locale/hu.js', 420, 436 ]
+1244 silly gunzTarPerm extractEntry locale/mk.js
+1245 silly gunzTarPerm modified mode [ 'locale/mk.js', 420, 436 ]
+1246 silly gunzTarPerm extractEntry locale/hr.js
+1247 silly gunzTarPerm modified mode [ 'locale/hr.js', 420, 436 ]
+1248 silly gunzTarPerm extractEntry locale/ml.js
+1249 silly gunzTarPerm modified mode [ 'locale/ml.js', 420, 436 ]
+1250 silly gunzTarPerm extractEntry locale/hi.js
+1251 silly gunzTarPerm modified mode [ 'locale/hi.js', 420, 436 ]
+1252 silly gunzTarPerm extractEntry locale/mr.js
+1253 silly gunzTarPerm modified mode [ 'locale/mr.js', 420, 436 ]
+1254 silly gunzTarPerm extractEntry locale/he.js
+1255 silly gunzTarPerm modified mode [ 'locale/he.js', 420, 436 ]
+1256 silly gunzTarPerm extractEntry locale/ms-my.js
+1257 silly gunzTarPerm modified mode [ 'locale/ms-my.js', 420, 436 ]
+1258 silly gunzTarPerm extractEntry locale/gom-latn.js
+1259 silly gunzTarPerm modified mode [ 'locale/gom-latn.js', 420, 436 ]
+1260 silly gunzTarPerm extractEntry locale/ms.js
+1261 silly gunzTarPerm modified mode [ 'locale/ms.js', 420, 436 ]
+1262 silly gunzTarPerm extractEntry locale/gl.js
+1263 silly gunzTarPerm modified mode [ 'locale/gl.js', 420, 436 ]
+1264 silly gunzTarPerm extractEntry locale/my.js
+1265 silly gunzTarPerm modified mode [ 'locale/my.js', 420, 436 ]
+1266 silly gunzTarPerm extractEntry locale/gd.js
+1267 silly gunzTarPerm modified mode [ 'locale/gd.js', 420, 436 ]
+1268 silly gunzTarPerm extractEntry locale/nb.js
+1269 silly gunzTarPerm modified mode [ 'locale/nb.js', 420, 436 ]
+1270 silly gunzTarPerm extractEntry locale/fy.js
+1271 silly gunzTarPerm modified mode [ 'locale/fy.js', 420, 436 ]
+1272 silly gunzTarPerm extractEntry locale/ne.js
+1273 silly gunzTarPerm modified mode [ 'locale/ne.js', 420, 436 ]
+1274 silly gunzTarPerm extractEntry locale/fr.js
+1275 silly gunzTarPerm modified mode [ 'locale/fr.js', 420, 436 ]
+1276 silly gunzTarPerm extractEntry locale/nl-be.js
+1277 silly gunzTarPerm modified mode [ 'locale/nl-be.js', 420, 436 ]
+1278 silly gunzTarPerm extractEntry locale/fr-ch.js
+1279 silly gunzTarPerm modified mode [ 'locale/fr-ch.js', 420, 436 ]
+1280 silly gunzTarPerm extractEntry locale/nl.js
+1281 silly gunzTarPerm modified mode [ 'locale/nl.js', 420, 436 ]
+1282 silly gunzTarPerm extractEntry locale/fr-ca.js
+1283 silly gunzTarPerm modified mode [ 'locale/fr-ca.js', 420, 436 ]
+1284 silly gunzTarPerm extractEntry locale/nn.js
+1285 silly gunzTarPerm modified mode [ 'locale/nn.js', 420, 436 ]
+1286 silly gunzTarPerm extractEntry locale/fo.js
+1287 silly gunzTarPerm modified mode [ 'locale/fo.js', 420, 436 ]
+1288 silly gunzTarPerm extractEntry locale/pa-in.js
+1289 silly gunzTarPerm modified mode [ 'locale/pa-in.js', 420, 436 ]
+1290 silly gunzTarPerm extractEntry locale/fi.js
+1291 silly gunzTarPerm modified mode [ 'locale/fi.js', 420, 436 ]
+1292 silly gunzTarPerm extractEntry locale/pl.js
+1293 silly gunzTarPerm modified mode [ 'locale/pl.js', 420, 436 ]
+1294 silly gunzTarPerm extractEntry locale/fa.js
+1295 silly gunzTarPerm modified mode [ 'locale/fa.js', 420, 436 ]
+1296 silly gunzTarPerm extractEntry locale/pt-br.js
+1297 silly gunzTarPerm modified mode [ 'locale/pt-br.js', 420, 436 ]
+1298 silly gunzTarPerm extractEntry locale/eu.js
+1299 silly gunzTarPerm modified mode [ 'locale/eu.js', 420, 436 ]
+1300 silly gunzTarPerm extractEntry locale/pt.js
+1301 silly gunzTarPerm modified mode [ 'locale/pt.js', 420, 436 ]
+1302 silly gunzTarPerm extractEntry locale/et.js
+1303 silly gunzTarPerm modified mode [ 'locale/et.js', 420, 436 ]
+1304 silly gunzTarPerm extractEntry locale/ro.js
+1305 silly gunzTarPerm modified mode [ 'locale/ro.js', 420, 436 ]
+1306 silly gunzTarPerm extractEntry locale/es.js
+1307 silly gunzTarPerm modified mode [ 'locale/es.js', 420, 436 ]
+1308 silly gunzTarPerm extractEntry locale/ru.js
+1309 silly gunzTarPerm modified mode [ 'locale/ru.js', 420, 436 ]
+1310 silly gunzTarPerm extractEntry locale/es-do.js
+1311 silly gunzTarPerm modified mode [ 'locale/es-do.js', 420, 436 ]
+1312 silly gunzTarPerm extractEntry locale/sd.js
+1313 silly gunzTarPerm modified mode [ 'locale/sd.js', 420, 436 ]
+1314 silly gunzTarPerm extractEntry locale/eo.js
+1315 silly gunzTarPerm modified mode [ 'locale/eo.js', 420, 436 ]
+1316 silly gunzTarPerm extractEntry locale/se.js
+1317 silly gunzTarPerm modified mode [ 'locale/se.js', 420, 436 ]
+1318 silly gunzTarPerm extractEntry locale/en-nz.js
+1319 silly gunzTarPerm modified mode [ 'locale/en-nz.js', 420, 436 ]
+1320 silly gunzTarPerm extractEntry locale/si.js
+1321 silly gunzTarPerm modified mode [ 'locale/si.js', 420, 436 ]
+1322 silly gunzTarPerm extractEntry locale/en-ie.js
+1323 silly gunzTarPerm modified mode [ 'locale/en-ie.js', 420, 436 ]
+1324 silly gunzTarPerm extractEntry locale/sk.js
+1325 silly gunzTarPerm modified mode [ 'locale/sk.js', 420, 436 ]
+1326 silly gunzTarPerm extractEntry locale/en-gb.js
+1327 silly gunzTarPerm modified mode [ 'locale/en-gb.js', 420, 436 ]
+1328 silly gunzTarPerm extractEntry locale/sl.js
+1329 silly gunzTarPerm modified mode [ 'locale/sl.js', 420, 436 ]
+1330 silly gunzTarPerm extractEntry locale/en-ca.js
+1331 silly gunzTarPerm modified mode [ 'locale/en-ca.js', 420, 436 ]
+1332 silly gunzTarPerm extractEntry locale/sq.js
+1333 silly gunzTarPerm modified mode [ 'locale/sq.js', 420, 436 ]
+1334 silly gunzTarPerm extractEntry locale/en-au.js
+1335 silly gunzTarPerm modified mode [ 'locale/en-au.js', 420, 436 ]
+1336 silly gunzTarPerm extractEntry locale/sr-cyrl.js
+1337 silly gunzTarPerm modified mode [ 'locale/sr-cyrl.js', 420, 436 ]
+1338 silly gunzTarPerm extractEntry locale/el.js
+1339 silly gunzTarPerm modified mode [ 'locale/el.js', 420, 436 ]
+1340 silly gunzTarPerm extractEntry locale/sr.js
+1341 silly gunzTarPerm modified mode [ 'locale/sr.js', 420, 436 ]
+1342 silly gunzTarPerm extractEntry locale/dv.js
+1343 silly gunzTarPerm modified mode [ 'locale/dv.js', 420, 436 ]
+1344 silly gunzTarPerm extractEntry locale/ss.js
+1345 silly gunzTarPerm modified mode [ 'locale/ss.js', 420, 436 ]
+1346 silly gunzTarPerm extractEntry locale/de.js
+1347 silly gunzTarPerm modified mode [ 'locale/de.js', 420, 436 ]
+1348 silly gunzTarPerm extractEntry locale/sv.js
+1349 silly gunzTarPerm modified mode [ 'locale/sv.js', 420, 436 ]
+1350 silly gunzTarPerm extractEntry locale/de-ch.js
+1351 silly gunzTarPerm modified mode [ 'locale/de-ch.js', 420, 436 ]
+1352 silly gunzTarPerm extractEntry locale/sw.js
+1353 silly gunzTarPerm modified mode [ 'locale/sw.js', 420, 436 ]
+1354 silly gunzTarPerm extractEntry locale/de-at.js
+1355 silly gunzTarPerm modified mode [ 'locale/de-at.js', 420, 436 ]
+1356 silly cache afterAdd joi@6.10.1
+1357 verbose afterAdd /home/shlomi/.npm/joi/6.10.1/package/package.json not in flight; writing
+1358 silly gunzTarPerm extractEntry locale/ta.js
+1359 silly gunzTarPerm modified mode [ 'locale/ta.js', 420, 436 ]
+1360 silly gunzTarPerm extractEntry locale/da.js
+1361 silly gunzTarPerm modified mode [ 'locale/da.js', 420, 436 ]
+1362 verbose afterAdd /home/shlomi/.npm/joi/6.10.1/package/package.json written
+1363 silly gunzTarPerm extractEntry locale/te.js
+1364 silly gunzTarPerm modified mode [ 'locale/te.js', 420, 436 ]
+1365 silly gunzTarPerm extractEntry locale/cy.js
+1366 silly gunzTarPerm modified mode [ 'locale/cy.js', 420, 436 ]
+1367 silly gunzTarPerm extractEntry locale/tet.js
+1368 silly gunzTarPerm modified mode [ 'locale/tet.js', 420, 436 ]
+1369 silly gunzTarPerm extractEntry locale/cv.js
+1370 silly gunzTarPerm modified mode [ 'locale/cv.js', 420, 436 ]
+1371 silly gunzTarPerm extractEntry locale/th.js
+1372 silly gunzTarPerm modified mode [ 'locale/th.js', 420, 436 ]
+1373 silly gunzTarPerm extractEntry locale/cs.js
+1374 silly gunzTarPerm modified mode [ 'locale/cs.js', 420, 436 ]
+1375 silly gunzTarPerm extractEntry locale/tl-ph.js
+1376 silly gunzTarPerm modified mode [ 'locale/tl-ph.js', 420, 436 ]
+1377 silly gunzTarPerm extractEntry locale/ca.js
+1378 silly gunzTarPerm modified mode [ 'locale/ca.js', 420, 436 ]
+1379 silly gunzTarPerm extractEntry locale/tlh.js
+1380 silly gunzTarPerm modified mode [ 'locale/tlh.js', 420, 436 ]
+1381 silly gunzTarPerm extractEntry locale/bs.js
+1382 silly gunzTarPerm modified mode [ 'locale/bs.js', 420, 436 ]
+1383 silly gunzTarPerm extractEntry locale/tr.js
+1384 silly gunzTarPerm modified mode [ 'locale/tr.js', 420, 436 ]
+1385 silly gunzTarPerm extractEntry locale/br.js
+1386 silly gunzTarPerm modified mode [ 'locale/br.js', 420, 436 ]
+1387 silly gunzTarPerm extractEntry locale/tzl.js
+1388 silly gunzTarPerm modified mode [ 'locale/tzl.js', 420, 436 ]
+1389 silly gunzTarPerm extractEntry locale/bo.js
+1390 silly gunzTarPerm modified mode [ 'locale/bo.js', 420, 436 ]
+1391 silly gunzTarPerm extractEntry locale/tzm-latn.js
+1392 silly gunzTarPerm modified mode [ 'locale/tzm-latn.js', 420, 436 ]
+1393 silly gunzTarPerm extractEntry locale/bn.js
+1394 silly gunzTarPerm modified mode [ 'locale/bn.js', 420, 436 ]
+1395 silly gunzTarPerm extractEntry locale/tzm.js
+1396 silly gunzTarPerm modified mode [ 'locale/tzm.js', 420, 436 ]
+1397 silly gunzTarPerm extractEntry locale/bg.js
+1398 silly gunzTarPerm modified mode [ 'locale/bg.js', 420, 436 ]
+1399 silly gunzTarPerm extractEntry locale/uk.js
+1400 silly gunzTarPerm modified mode [ 'locale/uk.js', 420, 436 ]
+1401 silly gunzTarPerm extractEntry locale/be.js
+1402 silly gunzTarPerm modified mode [ 'locale/be.js', 420, 436 ]
+1403 silly gunzTarPerm extractEntry locale/ur.js
+1404 silly gunzTarPerm modified mode [ 'locale/ur.js', 420, 436 ]
+1405 silly gunzTarPerm extractEntry locale/az.js
+1406 silly gunzTarPerm modified mode [ 'locale/az.js', 420, 436 ]
+1407 silly gunzTarPerm extractEntry locale/uz-latn.js
+1408 silly gunzTarPerm modified mode [ 'locale/uz-latn.js', 420, 436 ]
+1409 silly gunzTarPerm extractEntry locale/ar.js
+1410 silly gunzTarPerm modified mode [ 'locale/ar.js', 420, 436 ]
+1411 silly gunzTarPerm extractEntry locale/uz.js
+1412 silly gunzTarPerm modified mode [ 'locale/uz.js', 420, 436 ]
+1413 silly gunzTarPerm extractEntry locale/ar-tn.js
+1414 silly gunzTarPerm modified mode [ 'locale/ar-tn.js', 420, 436 ]
+1415 silly gunzTarPerm extractEntry locale/vi.js
+1416 silly gunzTarPerm modified mode [ 'locale/vi.js', 420, 436 ]
+1417 silly gunzTarPerm extractEntry locale/ar-sa.js
+1418 silly gunzTarPerm modified mode [ 'locale/ar-sa.js', 420, 436 ]
+1419 silly gunzTarPerm extractEntry locale/x-pseudo.js
+1420 silly gunzTarPerm modified mode [ 'locale/x-pseudo.js', 420, 436 ]
+1421 silly gunzTarPerm extractEntry locale/ar-ma.js
+1422 silly gunzTarPerm modified mode [ 'locale/ar-ma.js', 420, 436 ]
+1423 silly cache afterAdd jsonwebtoken@7.4.0
+1424 verbose afterAdd /home/shlomi/.npm/jsonwebtoken/7.4.0/package/package.json not in flight; writing
+1425 verbose afterAdd /home/shlomi/.npm/jsonwebtoken/7.4.0/package/package.json written
+1426 silly gunzTarPerm extractEntry locale/yo.js
+1427 silly gunzTarPerm modified mode [ 'locale/yo.js', 420, 436 ]
+1428 silly gunzTarPerm extractEntry locale/ar-ly.js
+1429 silly gunzTarPerm modified mode [ 'locale/ar-ly.js', 420, 436 ]
+1430 silly gunzTarPerm extractEntry locale/zh-cn.js
+1431 silly gunzTarPerm modified mode [ 'locale/zh-cn.js', 420, 436 ]
+1432 silly gunzTarPerm extractEntry locale/ar-kw.js
+1433 silly gunzTarPerm modified mode [ 'locale/ar-kw.js', 420, 436 ]
+1434 silly gunzTarPerm extractEntry locale/zh-hk.js
+1435 silly gunzTarPerm modified mode [ 'locale/zh-hk.js', 420, 436 ]
+1436 silly gunzTarPerm extractEntry locale/ar-dz.js
+1437 silly gunzTarPerm modified mode [ 'locale/ar-dz.js', 420, 436 ]
+1438 silly gunzTarPerm extractEntry locale/zh-tw.js
+1439 silly gunzTarPerm modified mode [ 'locale/zh-tw.js', 420, 436 ]
+1440 silly gunzTarPerm extractEntry locale/km.js
+1441 silly gunzTarPerm modified mode [ 'locale/km.js', 420, 436 ]
+1442 silly gunzTarPerm extractEntry CHANGELOG.md
+1443 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+1444 silly gunzTarPerm extractEntry moment.d.ts
+1445 silly gunzTarPerm modified mode [ 'moment.d.ts', 420, 436 ]
+1446 silly gunzTarPerm extractEntry src/moment.js
+1447 silly gunzTarPerm modified mode [ 'src/moment.js', 420, 436 ]
+1448 silly gunzTarPerm extractEntry src/lib/create/check-overflow.js
+1449 silly gunzTarPerm modified mode [ 'src/lib/create/check-overflow.js', 420, 436 ]
+1450 silly gunzTarPerm extractEntry src/lib/create/from-anything.js
+1451 silly gunzTarPerm modified mode [ 'src/lib/create/from-anything.js', 420, 436 ]
+1452 silly gunzTarPerm extractEntry src/lib/create/from-array.js
+1453 silly gunzTarPerm modified mode [ 'src/lib/create/from-array.js', 420, 436 ]
+1454 silly gunzTarPerm extractEntry src/lib/create/from-object.js
+1455 silly gunzTarPerm modified mode [ 'src/lib/create/from-object.js', 420, 436 ]
+1456 silly gunzTarPerm extractEntry src/lib/create/from-string-and-array.js
+1457 silly gunzTarPerm modified mode [ 'src/lib/create/from-string-and-array.js', 420, 436 ]
+1458 silly gunzTarPerm extractEntry src/lib/create/date-from-array.js
+1459 silly gunzTarPerm modified mode [ 'src/lib/create/date-from-array.js', 420, 436 ]
+1460 silly gunzTarPerm extractEntry src/lib/create/from-string.js
+1461 silly gunzTarPerm modified mode [ 'src/lib/create/from-string.js', 420, 436 ]
+1462 silly gunzTarPerm extractEntry src/lib/create/local.js
+1463 silly gunzTarPerm modified mode [ 'src/lib/create/local.js', 420, 436 ]
+1464 silly gunzTarPerm extractEntry src/lib/create/parsing-flags.js
+1465 silly gunzTarPerm modified mode [ 'src/lib/create/parsing-flags.js', 420, 436 ]
+1466 silly gunzTarPerm extractEntry src/lib/create/utc.js
+1467 silly gunzTarPerm modified mode [ 'src/lib/create/utc.js', 420, 436 ]
+1468 silly gunzTarPerm extractEntry src/lib/create/valid.js
+1469 silly gunzTarPerm modified mode [ 'src/lib/create/valid.js', 420, 436 ]
+1470 silly gunzTarPerm extractEntry src/lib/create/from-string-and-format.js
+1471 silly gunzTarPerm modified mode [ 'src/lib/create/from-string-and-format.js', 420, 436 ]
+1472 silly gunzTarPerm extractEntry src/lib/duration/abs.js
+1473 silly gunzTarPerm modified mode [ 'src/lib/duration/abs.js', 420, 436 ]
+1474 silly gunzTarPerm extractEntry src/lib/duration/as.js
+1475 silly gunzTarPerm modified mode [ 'src/lib/duration/as.js', 420, 436 ]
+1476 silly gunzTarPerm extractEntry src/lib/duration/bubble.js
+1477 silly gunzTarPerm modified mode [ 'src/lib/duration/bubble.js', 420, 436 ]
+1478 silly gunzTarPerm extractEntry src/lib/duration/constructor.js
+1479 silly gunzTarPerm modified mode [ 'src/lib/duration/constructor.js', 420, 436 ]
+1480 silly gunzTarPerm extractEntry src/lib/duration/create.js
+1481 silly gunzTarPerm modified mode [ 'src/lib/duration/create.js', 420, 436 ]
+1482 silly gunzTarPerm extractEntry src/lib/duration/add-subtract.js
+1483 silly gunzTarPerm modified mode [ 'src/lib/duration/add-subtract.js', 420, 436 ]
+1484 silly gunzTarPerm extractEntry src/lib/duration/get.js
+1485 silly gunzTarPerm modified mode [ 'src/lib/duration/get.js', 420, 436 ]
+1486 silly gunzTarPerm extractEntry src/lib/duration/humanize.js
+1487 silly gunzTarPerm modified mode [ 'src/lib/duration/humanize.js', 420, 436 ]
+1488 silly gunzTarPerm extractEntry src/lib/duration/iso-string.js
+1489 silly gunzTarPerm modified mode [ 'src/lib/duration/iso-string.js', 420, 436 ]
+1490 silly gunzTarPerm extractEntry src/lib/duration/prototype.js
+1491 silly gunzTarPerm modified mode [ 'src/lib/duration/prototype.js', 420, 436 ]
+1492 silly gunzTarPerm extractEntry src/lib/duration/valid.js
+1493 silly gunzTarPerm modified mode [ 'src/lib/duration/valid.js', 420, 436 ]
+1494 silly gunzTarPerm extractEntry src/lib/duration/duration.js
+1495 silly gunzTarPerm modified mode [ 'src/lib/duration/duration.js', 420, 436 ]
+1496 silly gunzTarPerm extractEntry src/lib/format/format.js
+1497 silly gunzTarPerm modified mode [ 'src/lib/format/format.js', 420, 436 ]
+1498 silly gunzTarPerm extractEntry src/lib/locale/base-config.js
+1499 silly gunzTarPerm modified mode [ 'src/lib/locale/base-config.js', 420, 436 ]
+1500 silly gunzTarPerm extractEntry src/lib/locale/en.js
+1501 silly gunzTarPerm modified mode [ 'src/lib/locale/en.js', 420, 436 ]
+1502 silly gunzTarPerm extractEntry src/lib/locale/formats.js
+1503 silly gunzTarPerm modified mode [ 'src/lib/locale/formats.js', 420, 436 ]
+1504 silly gunzTarPerm extractEntry src/lib/locale/invalid.js
+1505 silly gunzTarPerm modified mode [ 'src/lib/locale/invalid.js', 420, 436 ]
+1506 silly gunzTarPerm extractEntry src/lib/locale/lists.js
+1507 silly gunzTarPerm modified mode [ 'src/lib/locale/lists.js', 420, 436 ]
+1508 silly gunzTarPerm extractEntry src/lib/locale/constructor.js
+1509 silly gunzTarPerm modified mode [ 'src/lib/locale/constructor.js', 420, 436 ]
+1510 silly gunzTarPerm extractEntry src/lib/locale/locales.js
+1511 silly gunzTarPerm modified mode [ 'src/lib/locale/locales.js', 420, 436 ]
+1512 silly gunzTarPerm extractEntry src/lib/locale/ordinal.js
+1513 silly gunzTarPerm modified mode [ 'src/lib/locale/ordinal.js', 420, 436 ]
+1514 silly gunzTarPerm extractEntry src/lib/locale/pre-post-format.js
+1515 silly gunzTarPerm modified mode [ 'src/lib/locale/pre-post-format.js', 420, 436 ]
+1516 silly gunzTarPerm extractEntry src/lib/locale/prototype.js
+1517 silly gunzTarPerm modified mode [ 'src/lib/locale/prototype.js', 420, 436 ]
+1518 silly gunzTarPerm extractEntry src/lib/locale/relative.js
+1519 silly gunzTarPerm modified mode [ 'src/lib/locale/relative.js', 420, 436 ]
+1520 silly gunzTarPerm extractEntry src/lib/locale/calendar.js
+1521 silly gunzTarPerm modified mode [ 'src/lib/locale/calendar.js', 420, 436 ]
+1522 silly gunzTarPerm extractEntry src/lib/locale/set.js
+1523 silly gunzTarPerm modified mode [ 'src/lib/locale/set.js', 420, 436 ]
+1524 silly gunzTarPerm extractEntry src/lib/locale/locale.js
+1525 silly gunzTarPerm modified mode [ 'src/lib/locale/locale.js', 420, 436 ]
+1526 silly gunzTarPerm extractEntry src/lib/moment/add-subtract.js
+1527 silly gunzTarPerm modified mode [ 'src/lib/moment/add-subtract.js', 420, 436 ]
+1528 silly gunzTarPerm extractEntry src/lib/moment/diff.js
+1529 silly gunzTarPerm modified mode [ 'src/lib/moment/diff.js', 420, 436 ]
+1530 silly gunzTarPerm extractEntry src/lib/moment/format.js
+1531 silly gunzTarPerm modified mode [ 'src/lib/moment/format.js', 420, 436 ]
+1532 silly gunzTarPerm extractEntry src/lib/moment/from.js
+1533 silly gunzTarPerm modified mode [ 'src/lib/moment/from.js', 420, 436 ]
+1534 silly gunzTarPerm extractEntry src/lib/moment/creation-data.js
+1535 silly gunzTarPerm modified mode [ 'src/lib/moment/creation-data.js', 420, 436 ]
+1536 silly gunzTarPerm extractEntry src/lib/moment/locale.js
+1537 silly gunzTarPerm modified mode [ 'src/lib/moment/locale.js', 420, 436 ]
+1538 silly gunzTarPerm extractEntry src/lib/moment/min-max.js
+1539 silly gunzTarPerm modified mode [ 'src/lib/moment/min-max.js', 420, 436 ]
+1540 silly gunzTarPerm extractEntry src/lib/moment/moment.js
+1541 silly gunzTarPerm modified mode [ 'src/lib/moment/moment.js', 420, 436 ]
+1542 silly gunzTarPerm extractEntry src/lib/moment/now.js
+1543 silly gunzTarPerm modified mode [ 'src/lib/moment/now.js', 420, 436 ]
+1544 silly gunzTarPerm extractEntry src/lib/moment/prototype.js
+1545 silly gunzTarPerm modified mode [ 'src/lib/moment/prototype.js', 420, 436 ]
+1546 silly gunzTarPerm extractEntry src/lib/moment/constructor.js
+1547 silly gunzTarPerm modified mode [ 'src/lib/moment/constructor.js', 420, 436 ]
+1548 silly gunzTarPerm extractEntry src/lib/moment/start-end-of.js
+1549 silly gunzTarPerm modified mode [ 'src/lib/moment/start-end-of.js', 420, 436 ]
+1550 silly gunzTarPerm extractEntry src/lib/moment/compare.js
+1551 silly gunzTarPerm modified mode [ 'src/lib/moment/compare.js', 420, 436 ]
+1552 silly gunzTarPerm extractEntry src/lib/moment/to-type.js
+1553 silly gunzTarPerm modified mode [ 'src/lib/moment/to-type.js', 420, 436 ]
+1554 silly gunzTarPerm extractEntry src/lib/moment/clone.js
+1555 silly gunzTarPerm modified mode [ 'src/lib/moment/clone.js', 420, 436 ]
+1556 silly gunzTarPerm extractEntry src/lib/moment/to.js
+1557 silly gunzTarPerm modified mode [ 'src/lib/moment/to.js', 420, 436 ]
+1558 silly gunzTarPerm extractEntry src/lib/moment/calendar.js
+1559 silly gunzTarPerm modified mode [ 'src/lib/moment/calendar.js', 420, 436 ]
+1560 silly gunzTarPerm extractEntry src/lib/moment/valid.js
+1561 silly gunzTarPerm modified mode [ 'src/lib/moment/valid.js', 420, 436 ]
+1562 silly gunzTarPerm extractEntry src/lib/moment/get-set.js
+1563 silly gunzTarPerm modified mode [ 'src/lib/moment/get-set.js', 420, 436 ]
+1564 silly gunzTarPerm extractEntry src/lib/parse/regex.js
+1565 silly gunzTarPerm modified mode [ 'src/lib/parse/regex.js', 420, 436 ]
+1566 silly gunzTarPerm extractEntry src/lib/parse/token.js
+1567 silly gunzTarPerm modified mode [ 'src/lib/parse/token.js', 420, 436 ]
+1568 silly gunzTarPerm extractEntry src/lib/units/aliases.js
+1569 silly gunzTarPerm modified mode [ 'src/lib/units/aliases.js', 420, 436 ]
+1570 silly gunzTarPerm extractEntry src/lib/units/millisecond.js
+1571 silly gunzTarPerm modified mode [ 'src/lib/units/millisecond.js', 420, 436 ]
+1572 silly gunzTarPerm extractEntry src/lib/units/minute.js
+1573 silly gunzTarPerm modified mode [ 'src/lib/units/minute.js', 420, 436 ]
+1574 silly gunzTarPerm extractEntry src/lib/units/month.js
+1575 silly gunzTarPerm modified mode [ 'src/lib/units/month.js', 420, 436 ]
+1576 silly gunzTarPerm extractEntry src/lib/units/offset.js
+1577 silly gunzTarPerm modified mode [ 'src/lib/units/offset.js', 420, 436 ]
+1578 silly gunzTarPerm extractEntry src/lib/units/hour.js
+1579 silly gunzTarPerm modified mode [ 'src/lib/units/hour.js', 420, 436 ]
+1580 silly gunzTarPerm extractEntry src/lib/units/quarter.js
+1581 silly gunzTarPerm modified mode [ 'src/lib/units/quarter.js', 420, 436 ]
+1582 silly gunzTarPerm extractEntry src/lib/units/second.js
+1583 silly gunzTarPerm modified mode [ 'src/lib/units/second.js', 420, 436 ]
+1584 silly gunzTarPerm extractEntry src/lib/units/timestamp.js
+1585 silly gunzTarPerm modified mode [ 'src/lib/units/timestamp.js', 420, 436 ]
+1586 silly gunzTarPerm extractEntry src/lib/units/timezone.js
+1587 silly gunzTarPerm modified mode [ 'src/lib/units/timezone.js', 420, 436 ]
+1588 silly gunzTarPerm extractEntry src/lib/units/units.js
+1589 silly gunzTarPerm modified mode [ 'src/lib/units/units.js', 420, 436 ]
+1590 silly gunzTarPerm extractEntry src/lib/units/day-of-year.js
+1591 silly gunzTarPerm modified mode [ 'src/lib/units/day-of-year.js', 420, 436 ]
+1592 silly gunzTarPerm extractEntry src/lib/units/week-calendar-utils.js
+1593 silly gunzTarPerm modified mode [ 'src/lib/units/week-calendar-utils.js', 420, 436 ]
+1594 silly gunzTarPerm extractEntry src/lib/units/day-of-week.js
+1595 silly gunzTarPerm modified mode [ 'src/lib/units/day-of-week.js', 420, 436 ]
+1596 silly gunzTarPerm extractEntry src/lib/units/week-year.js
+1597 silly gunzTarPerm modified mode [ 'src/lib/units/week-year.js', 420, 436 ]
+1598 silly gunzTarPerm extractEntry src/lib/units/day-of-month.js
+1599 silly gunzTarPerm modified mode [ 'src/lib/units/day-of-month.js', 420, 436 ]
+1600 silly gunzTarPerm extractEntry src/lib/units/week.js
+1601 silly gunzTarPerm modified mode [ 'src/lib/units/week.js', 420, 436 ]
+1602 silly gunzTarPerm extractEntry src/lib/units/constants.js
+1603 silly gunzTarPerm modified mode [ 'src/lib/units/constants.js', 420, 436 ]
+1604 silly gunzTarPerm extractEntry src/lib/units/year.js
+1605 silly gunzTarPerm modified mode [ 'src/lib/units/year.js', 420, 436 ]
+1606 silly gunzTarPerm extractEntry src/lib/units/priorities.js
+1607 silly gunzTarPerm modified mode [ 'src/lib/units/priorities.js', 420, 436 ]
+1608 silly gunzTarPerm extractEntry src/lib/utils/abs-ceil.js
+1609 silly gunzTarPerm modified mode [ 'src/lib/utils/abs-ceil.js', 420, 436 ]
+1610 silly gunzTarPerm extractEntry src/lib/utils/has-own-prop.js
+1611 silly gunzTarPerm modified mode [ 'src/lib/utils/has-own-prop.js', 420, 436 ]
+1612 silly gunzTarPerm extractEntry src/lib/utils/hooks.js
+1613 silly gunzTarPerm modified mode [ 'src/lib/utils/hooks.js', 420, 436 ]
+1614 silly gunzTarPerm extractEntry src/lib/utils/index-of.js
+1615 silly gunzTarPerm modified mode [ 'src/lib/utils/index-of.js', 420, 436 ]
+1616 silly gunzTarPerm extractEntry src/lib/utils/is-array.js
+1617 silly gunzTarPerm modified mode [ 'src/lib/utils/is-array.js', 420, 436 ]
+1618 silly gunzTarPerm extractEntry src/lib/utils/extend.js
+1619 silly gunzTarPerm modified mode [ 'src/lib/utils/extend.js', 420, 436 ]
+1620 silly gunzTarPerm extractEntry src/lib/utils/is-function.js
+1621 silly gunzTarPerm modified mode [ 'src/lib/utils/is-function.js', 420, 436 ]
+1622 silly gunzTarPerm extractEntry src/lib/utils/is-number.js
+1623 silly gunzTarPerm modified mode [ 'src/lib/utils/is-number.js', 420, 436 ]
+1624 silly gunzTarPerm extractEntry src/lib/utils/is-object-empty.js
+1625 silly gunzTarPerm modified mode [ 'src/lib/utils/is-object-empty.js', 420, 436 ]
+1626 silly gunzTarPerm extractEntry src/lib/utils/is-object.js
+1627 silly gunzTarPerm modified mode [ 'src/lib/utils/is-object.js', 420, 436 ]
+1628 silly gunzTarPerm extractEntry src/lib/utils/is-undefined.js
+1629 silly gunzTarPerm modified mode [ 'src/lib/utils/is-undefined.js', 420, 436 ]
+1630 silly gunzTarPerm extractEntry src/lib/utils/deprecate.js
+1631 silly gunzTarPerm modified mode [ 'src/lib/utils/deprecate.js', 420, 436 ]
+1632 silly gunzTarPerm extractEntry src/lib/utils/keys.js
+1633 silly gunzTarPerm modified mode [ 'src/lib/utils/keys.js', 420, 436 ]
+1634 silly gunzTarPerm extractEntry src/lib/utils/defaults.js
+1635 silly gunzTarPerm modified mode [ 'src/lib/utils/defaults.js', 420, 436 ]
+1636 silly gunzTarPerm extractEntry src/lib/utils/map.js
+1637 silly gunzTarPerm modified mode [ 'src/lib/utils/map.js', 420, 436 ]
+1638 silly gunzTarPerm extractEntry src/lib/utils/compare-arrays.js
+1639 silly gunzTarPerm modified mode [ 'src/lib/utils/compare-arrays.js', 420, 436 ]
+1640 silly gunzTarPerm extractEntry src/lib/utils/some.js
+1641 silly gunzTarPerm modified mode [ 'src/lib/utils/some.js', 420, 436 ]
+1642 silly gunzTarPerm extractEntry src/lib/utils/abs-round.js
+1643 silly gunzTarPerm modified mode [ 'src/lib/utils/abs-round.js', 420, 436 ]
+1644 silly gunzTarPerm extractEntry src/lib/utils/to-int.js
+1645 silly gunzTarPerm modified mode [ 'src/lib/utils/to-int.js', 420, 436 ]
+1646 silly gunzTarPerm extractEntry src/lib/utils/abs-floor.js
+1647 silly gunzTarPerm modified mode [ 'src/lib/utils/abs-floor.js', 420, 436 ]
+1648 silly gunzTarPerm extractEntry src/lib/utils/zero-fill.js
+1649 silly gunzTarPerm modified mode [ 'src/lib/utils/zero-fill.js', 420, 436 ]
+1650 silly gunzTarPerm extractEntry src/lib/utils/is-date.js
+1651 silly gunzTarPerm modified mode [ 'src/lib/utils/is-date.js', 420, 436 ]
+1652 silly gunzTarPerm extractEntry src/locale/af.js
+1653 silly gunzTarPerm modified mode [ 'src/locale/af.js', 420, 436 ]
+1654 silly gunzTarPerm extractEntry src/locale/jv.js
+1655 silly gunzTarPerm modified mode [ 'src/locale/jv.js', 420, 436 ]
+1656 silly gunzTarPerm extractEntry src/locale/ka.js
+1657 silly gunzTarPerm modified mode [ 'src/locale/ka.js', 420, 436 ]
+1658 silly gunzTarPerm extractEntry src/locale/kk.js
+1659 silly gunzTarPerm modified mode [ 'src/locale/kk.js', 420, 436 ]
+1660 silly gunzTarPerm extractEntry src/locale/ja.js
+1661 silly gunzTarPerm modified mode [ 'src/locale/ja.js', 420, 436 ]
+1662 silly gunzTarPerm extractEntry src/locale/kn.js
+1663 silly gunzTarPerm modified mode [ 'src/locale/kn.js', 420, 436 ]
+1664 silly gunzTarPerm extractEntry src/locale/ko.js
+1665 silly gunzTarPerm modified mode [ 'src/locale/ko.js', 420, 436 ]
+1666 silly gunzTarPerm extractEntry src/locale/ky.js
+1667 silly gunzTarPerm modified mode [ 'src/locale/ky.js', 420, 436 ]
+1668 silly gunzTarPerm extractEntry src/locale/lb.js
+1669 silly gunzTarPerm modified mode [ 'src/locale/lb.js', 420, 436 ]
+1670 silly gunzTarPerm extractEntry src/locale/lo.js
+1671 silly gunzTarPerm modified mode [ 'src/locale/lo.js', 420, 436 ]
+1672 silly gunzTarPerm extractEntry src/locale/it.js
+1673 silly gunzTarPerm modified mode [ 'src/locale/it.js', 420, 436 ]
+1674 silly gunzTarPerm extractEntry src/locale/lt.js
+1675 silly gunzTarPerm modified mode [ 'src/locale/lt.js', 420, 436 ]
+1676 silly gunzTarPerm extractEntry src/locale/is.js
+1677 silly gunzTarPerm modified mode [ 'src/locale/is.js', 420, 436 ]
+1678 silly gunzTarPerm extractEntry src/locale/lv.js
+1679 silly gunzTarPerm modified mode [ 'src/locale/lv.js', 420, 436 ]
+1680 silly gunzTarPerm extractEntry src/locale/id.js
+1681 silly gunzTarPerm modified mode [ 'src/locale/id.js', 420, 436 ]
+1682 silly gunzTarPerm extractEntry src/locale/me.js
+1683 silly gunzTarPerm modified mode [ 'src/locale/me.js', 420, 436 ]
+1684 silly gunzTarPerm extractEntry src/locale/hy-am.js
+1685 silly gunzTarPerm modified mode [ 'src/locale/hy-am.js', 420, 436 ]
+1686 silly gunzTarPerm extractEntry src/locale/mi.js
+1687 silly gunzTarPerm modified mode [ 'src/locale/mi.js', 420, 436 ]
+1688 silly gunzTarPerm extractEntry src/locale/hu.js
+1689 silly gunzTarPerm modified mode [ 'src/locale/hu.js', 420, 436 ]
+1690 silly gunzTarPerm extractEntry src/locale/mk.js
+1691 silly gunzTarPerm modified mode [ 'src/locale/mk.js', 420, 436 ]
+1692 silly gunzTarPerm extractEntry src/locale/hr.js
+1693 silly gunzTarPerm modified mode [ 'src/locale/hr.js', 420, 436 ]
+1694 silly gunzTarPerm extractEntry src/locale/ml.js
+1695 silly gunzTarPerm modified mode [ 'src/locale/ml.js', 420, 436 ]
+1696 silly gunzTarPerm extractEntry src/locale/hi.js
+1697 silly gunzTarPerm modified mode [ 'src/locale/hi.js', 420, 436 ]
+1698 silly gunzTarPerm extractEntry src/locale/mr.js
+1699 silly gunzTarPerm modified mode [ 'src/locale/mr.js', 420, 436 ]
+1700 silly gunzTarPerm extractEntry src/locale/he.js
+1701 silly gunzTarPerm modified mode [ 'src/locale/he.js', 420, 436 ]
+1702 silly gunzTarPerm extractEntry src/locale/ms-my.js
+1703 silly gunzTarPerm modified mode [ 'src/locale/ms-my.js', 420, 436 ]
+1704 silly gunzTarPerm extractEntry src/locale/gom-latn.js
+1705 silly gunzTarPerm modified mode [ 'src/locale/gom-latn.js', 420, 436 ]
+1706 silly gunzTarPerm extractEntry src/locale/ms.js
+1707 silly gunzTarPerm modified mode [ 'src/locale/ms.js', 420, 436 ]
+1708 silly gunzTarPerm extractEntry src/locale/gl.js
+1709 silly gunzTarPerm modified mode [ 'src/locale/gl.js', 420, 436 ]
+1710 silly gunzTarPerm extractEntry src/locale/my.js
+1711 silly gunzTarPerm modified mode [ 'src/locale/my.js', 420, 436 ]
+1712 silly gunzTarPerm extractEntry src/locale/gd.js
+1713 silly gunzTarPerm modified mode [ 'src/locale/gd.js', 420, 436 ]
+1714 silly gunzTarPerm extractEntry src/locale/nb.js
+1715 silly gunzTarPerm modified mode [ 'src/locale/nb.js', 420, 436 ]
+1716 silly gunzTarPerm extractEntry src/locale/fy.js
+1717 silly gunzTarPerm modified mode [ 'src/locale/fy.js', 420, 436 ]
+1718 silly gunzTarPerm extractEntry src/locale/ne.js
+1719 silly gunzTarPerm modified mode [ 'src/locale/ne.js', 420, 436 ]
+1720 silly gunzTarPerm extractEntry src/locale/fr.js
+1721 silly gunzTarPerm modified mode [ 'src/locale/fr.js', 420, 436 ]
+1722 silly gunzTarPerm extractEntry src/locale/nl-be.js
+1723 silly gunzTarPerm modified mode [ 'src/locale/nl-be.js', 420, 436 ]
+1724 silly gunzTarPerm extractEntry src/locale/fr-ch.js
+1725 silly gunzTarPerm modified mode [ 'src/locale/fr-ch.js', 420, 436 ]
+1726 silly gunzTarPerm extractEntry src/locale/nl.js
+1727 silly gunzTarPerm modified mode [ 'src/locale/nl.js', 420, 436 ]
+1728 silly gunzTarPerm extractEntry src/locale/fr-ca.js
+1729 silly gunzTarPerm modified mode [ 'src/locale/fr-ca.js', 420, 436 ]
+1730 silly gunzTarPerm extractEntry src/locale/nn.js
+1731 silly gunzTarPerm modified mode [ 'src/locale/nn.js', 420, 436 ]
+1732 silly gunzTarPerm extractEntry src/locale/fo.js
+1733 silly gunzTarPerm modified mode [ 'src/locale/fo.js', 420, 436 ]
+1734 silly gunzTarPerm extractEntry src/locale/pa-in.js
+1735 silly gunzTarPerm modified mode [ 'src/locale/pa-in.js', 420, 436 ]
+1736 silly gunzTarPerm extractEntry src/locale/fi.js
+1737 silly gunzTarPerm modified mode [ 'src/locale/fi.js', 420, 436 ]
+1738 silly gunzTarPerm extractEntry src/locale/pl.js
+1739 silly gunzTarPerm modified mode [ 'src/locale/pl.js', 420, 436 ]
+1740 silly gunzTarPerm extractEntry src/locale/fa.js
+1741 silly gunzTarPerm modified mode [ 'src/locale/fa.js', 420, 436 ]
+1742 silly gunzTarPerm extractEntry src/locale/pt-br.js
+1743 silly gunzTarPerm modified mode [ 'src/locale/pt-br.js', 420, 436 ]
+1744 silly gunzTarPerm extractEntry src/locale/eu.js
+1745 silly gunzTarPerm modified mode [ 'src/locale/eu.js', 420, 436 ]
+1746 silly gunzTarPerm extractEntry src/locale/pt.js
+1747 silly gunzTarPerm modified mode [ 'src/locale/pt.js', 420, 436 ]
+1748 silly gunzTarPerm extractEntry src/locale/et.js
+1749 silly gunzTarPerm modified mode [ 'src/locale/et.js', 420, 436 ]
+1750 silly gunzTarPerm extractEntry src/locale/ro.js
+1751 silly gunzTarPerm modified mode [ 'src/locale/ro.js', 420, 436 ]
+1752 silly gunzTarPerm extractEntry src/locale/es.js
+1753 silly gunzTarPerm modified mode [ 'src/locale/es.js', 420, 436 ]
+1754 silly gunzTarPerm extractEntry src/locale/ru.js
+1755 silly gunzTarPerm modified mode [ 'src/locale/ru.js', 420, 436 ]
+1756 silly gunzTarPerm extractEntry src/locale/es-do.js
+1757 silly gunzTarPerm modified mode [ 'src/locale/es-do.js', 420, 436 ]
+1758 silly gunzTarPerm extractEntry src/locale/sd.js
+1759 silly gunzTarPerm modified mode [ 'src/locale/sd.js', 420, 436 ]
+1760 silly gunzTarPerm extractEntry src/locale/eo.js
+1761 silly gunzTarPerm modified mode [ 'src/locale/eo.js', 420, 436 ]
+1762 silly gunzTarPerm extractEntry src/locale/se.js
+1763 silly gunzTarPerm modified mode [ 'src/locale/se.js', 420, 436 ]
+1764 silly gunzTarPerm extractEntry src/locale/en-nz.js
+1765 silly gunzTarPerm modified mode [ 'src/locale/en-nz.js', 420, 436 ]
+1766 silly gunzTarPerm extractEntry src/locale/si.js
+1767 silly gunzTarPerm modified mode [ 'src/locale/si.js', 420, 436 ]
+1768 silly gunzTarPerm extractEntry src/locale/en-ie.js
+1769 silly gunzTarPerm modified mode [ 'src/locale/en-ie.js', 420, 436 ]
+1770 silly gunzTarPerm extractEntry src/locale/sk.js
+1771 silly gunzTarPerm modified mode [ 'src/locale/sk.js', 420, 436 ]
+1772 silly gunzTarPerm extractEntry src/locale/en-gb.js
+1773 silly gunzTarPerm modified mode [ 'src/locale/en-gb.js', 420, 436 ]
+1774 silly gunzTarPerm extractEntry src/locale/sl.js
+1775 silly gunzTarPerm modified mode [ 'src/locale/sl.js', 420, 436 ]
+1776 silly gunzTarPerm extractEntry src/locale/en-ca.js
+1777 silly gunzTarPerm modified mode [ 'src/locale/en-ca.js', 420, 436 ]
+1778 silly gunzTarPerm extractEntry src/locale/sq.js
+1779 silly gunzTarPerm modified mode [ 'src/locale/sq.js', 420, 436 ]
+1780 silly gunzTarPerm extractEntry src/locale/en-au.js
+1781 silly gunzTarPerm modified mode [ 'src/locale/en-au.js', 420, 436 ]
+1782 silly gunzTarPerm extractEntry src/locale/sr-cyrl.js
+1783 silly gunzTarPerm modified mode [ 'src/locale/sr-cyrl.js', 420, 436 ]
+1784 silly gunzTarPerm extractEntry src/locale/el.js
+1785 silly gunzTarPerm modified mode [ 'src/locale/el.js', 420, 436 ]
+1786 silly gunzTarPerm extractEntry src/locale/sr.js
+1787 silly gunzTarPerm modified mode [ 'src/locale/sr.js', 420, 436 ]
+1788 silly gunzTarPerm extractEntry src/locale/dv.js
+1789 silly gunzTarPerm modified mode [ 'src/locale/dv.js', 420, 436 ]
+1790 silly gunzTarPerm extractEntry src/locale/ss.js
+1791 silly gunzTarPerm modified mode [ 'src/locale/ss.js', 420, 436 ]
+1792 silly gunzTarPerm extractEntry src/locale/de.js
+1793 silly gunzTarPerm modified mode [ 'src/locale/de.js', 420, 436 ]
+1794 silly gunzTarPerm extractEntry src/locale/sv.js
+1795 silly gunzTarPerm modified mode [ 'src/locale/sv.js', 420, 436 ]
+1796 silly gunzTarPerm extractEntry src/locale/de-ch.js
+1797 silly gunzTarPerm modified mode [ 'src/locale/de-ch.js', 420, 436 ]
+1798 silly gunzTarPerm extractEntry src/locale/sw.js
+1799 silly gunzTarPerm modified mode [ 'src/locale/sw.js', 420, 436 ]
+1800 silly gunzTarPerm extractEntry src/locale/de-at.js
+1801 silly gunzTarPerm modified mode [ 'src/locale/de-at.js', 420, 436 ]
+1802 silly gunzTarPerm extractEntry src/locale/ta.js
+1803 silly gunzTarPerm modified mode [ 'src/locale/ta.js', 420, 436 ]
+1804 silly gunzTarPerm extractEntry src/locale/da.js
+1805 silly gunzTarPerm modified mode [ 'src/locale/da.js', 420, 436 ]
+1806 silly gunzTarPerm extractEntry src/locale/te.js
+1807 silly gunzTarPerm modified mode [ 'src/locale/te.js', 420, 436 ]
+1808 silly gunzTarPerm extractEntry src/locale/cy.js
+1809 silly gunzTarPerm modified mode [ 'src/locale/cy.js', 420, 436 ]
+1810 silly gunzTarPerm extractEntry src/locale/tet.js
+1811 silly gunzTarPerm modified mode [ 'src/locale/tet.js', 420, 436 ]
+1812 silly gunzTarPerm extractEntry src/locale/cv.js
+1813 silly gunzTarPerm modified mode [ 'src/locale/cv.js', 420, 436 ]
+1814 silly gunzTarPerm extractEntry src/locale/th.js
+1815 silly gunzTarPerm modified mode [ 'src/locale/th.js', 420, 436 ]
+1816 silly gunzTarPerm extractEntry src/locale/cs.js
+1817 silly gunzTarPerm modified mode [ 'src/locale/cs.js', 420, 436 ]
+1818 silly gunzTarPerm extractEntry src/locale/tl-ph.js
+1819 silly gunzTarPerm modified mode [ 'src/locale/tl-ph.js', 420, 436 ]
+1820 silly gunzTarPerm extractEntry src/locale/ca.js
+1821 silly gunzTarPerm modified mode [ 'src/locale/ca.js', 420, 436 ]
+1822 silly gunzTarPerm extractEntry src/locale/tlh.js
+1823 silly gunzTarPerm modified mode [ 'src/locale/tlh.js', 420, 436 ]
+1824 silly gunzTarPerm extractEntry src/locale/bs.js
+1825 silly gunzTarPerm modified mode [ 'src/locale/bs.js', 420, 436 ]
+1826 silly gunzTarPerm extractEntry src/locale/tr.js
+1827 silly gunzTarPerm modified mode [ 'src/locale/tr.js', 420, 436 ]
+1828 silly gunzTarPerm extractEntry src/locale/br.js
+1829 silly gunzTarPerm modified mode [ 'src/locale/br.js', 420, 436 ]
+1830 silly gunzTarPerm extractEntry src/locale/tzl.js
+1831 silly gunzTarPerm modified mode [ 'src/locale/tzl.js', 420, 436 ]
+1832 silly gunzTarPerm extractEntry src/locale/bo.js
+1833 silly gunzTarPerm modified mode [ 'src/locale/bo.js', 420, 436 ]
+1834 silly gunzTarPerm extractEntry src/locale/tzm-latn.js
+1835 silly gunzTarPerm modified mode [ 'src/locale/tzm-latn.js', 420, 436 ]
+1836 silly gunzTarPerm extractEntry src/locale/bn.js
+1837 silly gunzTarPerm modified mode [ 'src/locale/bn.js', 420, 436 ]
+1838 silly gunzTarPerm extractEntry src/locale/tzm.js
+1839 silly gunzTarPerm modified mode [ 'src/locale/tzm.js', 420, 436 ]
+1840 silly gunzTarPerm extractEntry src/locale/bg.js
+1841 silly gunzTarPerm modified mode [ 'src/locale/bg.js', 420, 436 ]
+1842 silly gunzTarPerm extractEntry src/locale/uk.js
+1843 silly gunzTarPerm modified mode [ 'src/locale/uk.js', 420, 436 ]
+1844 silly gunzTarPerm extractEntry src/locale/be.js
+1845 silly gunzTarPerm modified mode [ 'src/locale/be.js', 420, 436 ]
+1846 silly gunzTarPerm extractEntry src/locale/ur.js
+1847 silly gunzTarPerm modified mode [ 'src/locale/ur.js', 420, 436 ]
+1848 silly gunzTarPerm extractEntry src/locale/az.js
+1849 silly gunzTarPerm modified mode [ 'src/locale/az.js', 420, 436 ]
+1850 silly gunzTarPerm extractEntry src/locale/uz-latn.js
+1851 silly gunzTarPerm modified mode [ 'src/locale/uz-latn.js', 420, 436 ]
+1852 silly gunzTarPerm extractEntry src/locale/ar.js
+1853 silly gunzTarPerm modified mode [ 'src/locale/ar.js', 420, 436 ]
+1854 silly gunzTarPerm extractEntry src/locale/uz.js
+1855 silly gunzTarPerm modified mode [ 'src/locale/uz.js', 420, 436 ]
+1856 silly gunzTarPerm extractEntry src/locale/ar-tn.js
+1857 silly gunzTarPerm modified mode [ 'src/locale/ar-tn.js', 420, 436 ]
+1858 silly gunzTarPerm extractEntry src/locale/vi.js
+1859 silly gunzTarPerm modified mode [ 'src/locale/vi.js', 420, 436 ]
+1860 silly gunzTarPerm extractEntry src/locale/ar-sa.js
+1861 silly gunzTarPerm modified mode [ 'src/locale/ar-sa.js', 420, 436 ]
+1862 silly gunzTarPerm extractEntry src/locale/x-pseudo.js
+1863 silly gunzTarPerm modified mode [ 'src/locale/x-pseudo.js', 420, 436 ]
+1864 silly gunzTarPerm extractEntry src/locale/ar-ma.js
+1865 silly gunzTarPerm modified mode [ 'src/locale/ar-ma.js', 420, 436 ]
+1866 silly gunzTarPerm extractEntry src/locale/yo.js
+1867 silly gunzTarPerm modified mode [ 'src/locale/yo.js', 420, 436 ]
+1868 silly gunzTarPerm extractEntry src/locale/ar-ly.js
+1869 silly gunzTarPerm modified mode [ 'src/locale/ar-ly.js', 420, 436 ]
+1870 silly gunzTarPerm extractEntry src/locale/zh-cn.js
+1871 silly gunzTarPerm modified mode [ 'src/locale/zh-cn.js', 420, 436 ]
+1872 silly gunzTarPerm extractEntry src/locale/ar-kw.js
+1873 silly gunzTarPerm modified mode [ 'src/locale/ar-kw.js', 420, 436 ]
+1874 silly gunzTarPerm extractEntry src/locale/zh-hk.js
+1875 silly gunzTarPerm modified mode [ 'src/locale/zh-hk.js', 420, 436 ]
+1876 silly gunzTarPerm extractEntry src/locale/ar-dz.js
+1877 silly gunzTarPerm modified mode [ 'src/locale/ar-dz.js', 420, 436 ]
+1878 silly gunzTarPerm extractEntry src/locale/zh-tw.js
+1879 silly gunzTarPerm modified mode [ 'src/locale/zh-tw.js', 420, 436 ]
+1880 silly gunzTarPerm extractEntry src/locale/km.js
+1881 silly gunzTarPerm modified mode [ 'src/locale/km.js', 420, 436 ]
+1882 silly cache afterAdd moment@2.18.1
+1883 verbose afterAdd /home/shlomi/.npm/moment/2.18.1/package/package.json not in flight; writing
+1884 verbose afterAdd /home/shlomi/.npm/moment/2.18.1/package/package.json written
+1885 silly rollbackFailedOptional Starting
+1886 silly rollbackFailedOptional Finishing
+1887 silly runTopLevelLifecycles Starting
+1888 silly runTopLevelLifecycles Finishing
+1889 silly install printInstalled
+1890 verbose stack Error: No compatible version found: mongodb@^3.6.0
+1890 verbose stack Valid install targets:
+1890 verbose stack 3.1.8, 3.1.7, 3.1.6, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.1.0-beta4, 3.1.0-beta3, 3.1.0-beta2, 3.1.0-beta1, 3.0.11, 3.0.10, 3.0.9, 3.0.8, 3.0.7, 3.0.6, 3.0.5, 3.0.4, 3.0.3, 3.0.2, 3.0.1, 3.0.0, 3.0.0-rc0, 2.2.36, 2.2.35, 2.2.34, 2.2.33, 2.2.32, 2.2.31, 2.2.30, 2.2.29, 2.2.28, 2.2.27, 2.2.26, 2.2.25, 2.2.24, 2.2.23, 2.2.22, 2.2.21, 2.2.20, 2.2.19, 2.2.18, 2.2.17, 2.2.16, 2.2.15, 2.2.14, 2.2.13, 2.2.12, 2.2.11, 2.2.10, 2.2.9, 2.2.8, 2.2.7, 2.2.6, 2.2.5, 2.2.4, 2.2.3, 2.2.2, 2.2.1, 2.2.0, 2.2.0-alpha2, 2.2.0-alpha1, 2.1.22-alpha4, 2.1.22-alpha3, 2.1.22-alpha2, 2.1.22-alpha, 2.1.21, 2.1.20, 2.1.19, 2.1.18, 2.1.17, 2.1.16, 2.1.15, 2.1.14, 2.1.13, 2.1.12, 2.1.11, 2.1.10, 2.1.9, 2.1.8, 2.1.7, 2.1.6, 2.1.5, 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.1.0-rc1, 2.1.0-alpha, 2.0.55, 2.0.54, 2.0.53, 2.0.52, 2.0.51, 2.0.50, 2.0.49, 2.0.48, 2.0.47, 2.0.46, 2.0.45, 2.0.44, 2.0.43, 2.0.42, 2.0.41, 2.0.40, 2.0.39, 2.0.38, 2.0.37, 2.0.36, 2.0.35, 2.0.34, 2.0.33, 2.0.32, 2.0.31, 2.0.30, 2.0.29, 2.0.28, 2.0.27, 2.0.26, 2.0.25, 2.0.24, 2.0.23, 2.0.22, 2.0.21, 2.0.20, 2.0.19, 2.0.18, 2.0.17, 2.0.16, 2.0.15, 2.0.14, 2.0.13, 2.0.12, 2.0.11, 2.0.10, 2.0.9, 2.0.8, 2.0.7, 2.0.6, 2.0.5, 2.0.4, 2.0.3, 2.0.2, 2.0.1, 2.0.0, 2.0.0-alpha2, 2.0.0-alpha1, 1.4.40, 1.4.39, 1.4.38, 1.4.37, 1.4.36, 1.4.35, 1.4.34, 1.4.33, 1.4.32, 1.4.31, 1.4.30, 1.4.29, 1.4.28, 1.4.27, 1.4.26, 1.4.25, 1.4.24, 1.4.23, 1.4.22, 1.4.20, 1.4.19, 1.4.18, 1.4.17, 1.4.16, 1.4.15, 1.4.14, 1.4.12, 1.4.11, 1.4.10, 1.4.9, 1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.4.0-rc9, 1.4.0-rc8, 1.4.0-rc7, 1.4.0-rc6, 1.4.0-rc5, 1.4.0-rc4, 1.4.0-rc3, 1.4.0-rc2, 1.4.0-rc10, 1.3.23, 1.3.22, 1.3.21, 1.3.20, 1.3.19, 1.3.18, 1.3.17, 1.3.15, 1.3.14, 1.3.12, 1.3.11, 1.3.10, 1.3.9, 1.3.8, 1.3.7, 1.3.6, 1.3.5, 1.3.4, 1.3.3, 1.3.2, 1.3.1, 1.3.0, 1.2.14, 1.2.13, 1.2.12, 1.2.11, 1.2.10, 1.2.9, 1.2.8, 1.2.7, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.11, 1.1.10, 1.1.9, 1.1.8, 1.1.7, 1.1.6, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.1.0-beta, 1.0.2, 1.0.1, 1.0.0, 0.9.9, 0.9.9-8, 0.9.9-7, 0.9.9-6, 0.9.9-5, 0.9.9-4, 0.9.9-3, 0.9.9-2, 0.9.9-1, 0.9.8, 0.9.8-7, 0.9.8-6, 0.9.8-5, 0.9.8-4, 0.9.8-3, 0.9.8-2, 0.9.8-1, 0.9.7, 0.9.7-3-5, 0.9.7-3-4, 0.9.7-3-3, 0.9.7-3-2, 0.9.7-3-1, 0.9.7-2-5, 0.9.7-2-4, 0.9.7-2-3, 0.9.7-2-2, 0.9.7-2-1, 0.9.7-3, 0.9.7-2, 0.9.7-1.4, 0.9.7-1.3, 0.9.7-1.2, 0.9.7-1.1, 0.9.7-1, 0.9.7-0, 0.9.6-23, 0.9.6-22, 0.9.6-21, 0.9.6-20, 0.9.6-19, 0.9.6-18, 0.9.6-17, 0.9.6-16, 0.9.6-15, 0.9.6-14, 0.9.6-13, 0.9.6-12, 0.9.6-11, 0.9.6-10, 0.9.6-9, 0.9.6-8, 0.9.6-7, 0.9.4, 0.9.4-4, 0.9.3, 0.9.2, 0.9.1
+1890 verbose stack
+1890 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+1890 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+1890 verbose stack     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+1890 verbose stack     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+1890 verbose stack     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+1890 verbose stack     at FSReqWrap.oncomplete (fs.js:135:15)
+1891 verbose cwd /home/shlomi/Desktop/Nodejs_Express
+1892 error Linux 4.15.0-36-generic
+1893 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+1894 error node v8.10.0
+1895 error npm  v3.5.2
+1896 error No compatible version found: mongodb@^3.6.0
+1896 error Valid install targets:
+1896 error 3.1.8, 3.1.7, 3.1.6, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.1.0-beta4, 3.1.0-beta3, 3.1.0-beta2, 3.1.0-beta1, 3.0.11, 3.0.10, 3.0.9, 3.0.8, 3.0.7, 3.0.6, 3.0.5, 3.0.4, 3.0.3, 3.0.2, 3.0.1, 3.0.0, 3.0.0-rc0, 2.2.36, 2.2.35, 2.2.34, 2.2.33, 2.2.32, 2.2.31, 2.2.30, 2.2.29, 2.2.28, 2.2.27, 2.2.26, 2.2.25, 2.2.24, 2.2.23, 2.2.22, 2.2.21, 2.2.20, 2.2.19, 2.2.18, 2.2.17, 2.2.16, 2.2.15, 2.2.14, 2.2.13, 2.2.12, 2.2.11, 2.2.10, 2.2.9, 2.2.8, 2.2.7, 2.2.6, 2.2.5, 2.2.4, 2.2.3, 2.2.2, 2.2.1, 2.2.0, 2.2.0-alpha2, 2.2.0-alpha1, 2.1.22-alpha4, 2.1.22-alpha3, 2.1.22-alpha2, 2.1.22-alpha, 2.1.21, 2.1.20, 2.1.19, 2.1.18, 2.1.17, 2.1.16, 2.1.15, 2.1.14, 2.1.13, 2.1.12, 2.1.11, 2.1.10, 2.1.9, 2.1.8, 2.1.7, 2.1.6, 2.1.5, 2.1.4, 2.1.3, 2.1.2, 2.1.1, 2.1.0, 2.1.0-rc1, 2.1.0-alpha, 2.0.55, 2.0.54, 2.0.53, 2.0.52, 2.0.51, 2.0.50, 2.0.49, 2.0.48, 2.0.47, 2.0.46, 2.0.45, 2.0.44, 2.0.43, 2.0.42, 2.0.41, 2.0.40, 2.0.39, 2.0.38, 2.0.37, 2.0.36, 2.0.35, 2.0.34, 2.0.33, 2.0.32, 2.0.31, 2.0.30, 2.0.29, 2.0.28, 2.0.27, 2.0.26, 2.0.25, 2.0.24, 2.0.23, 2.0.22, 2.0.21, 2.0.20, 2.0.19, 2.0.18, 2.0.17, 2.0.16, 2.0.15, 2.0.14, 2.0.13, 2.0.12, 2.0.11, 2.0.10, 2.0.9, 2.0.8, 2.0.7, 2.0.6, 2.0.5, 2.0.4, 2.0.3, 2.0.2, 2.0.1, 2.0.0, 2.0.0-alpha2, 2.0.0-alpha1, 1.4.40, 1.4.39, 1.4.38, 1.4.37, 1.4.36, 1.4.35, 1.4.34, 1.4.33, 1.4.32, 1.4.31, 1.4.30, 1.4.29, 1.4.28, 1.4.27, 1.4.26, 1.4.25, 1.4.24, 1.4.23, 1.4.22, 1.4.20, 1.4.19, 1.4.18, 1.4.17, 1.4.16, 1.4.15, 1.4.14, 1.4.12, 1.4.11, 1.4.10, 1.4.9, 1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.4.0-rc9, 1.4.0-rc8, 1.4.0-rc7, 1.4.0-rc6, 1.4.0-rc5, 1.4.0-rc4, 1.4.0-rc3, 1.4.0-rc2, 1.4.0-rc10, 1.3.23, 1.3.22, 1.3.21, 1.3.20, 1.3.19, 1.3.18, 1.3.17, 1.3.15, 1.3.14, 1.3.12, 1.3.11, 1.3.10, 1.3.9, 1.3.8, 1.3.7, 1.3.6, 1.3.5, 1.3.4, 1.3.3, 1.3.2, 1.3.1, 1.3.0, 1.2.14, 1.2.13, 1.2.12, 1.2.11, 1.2.10, 1.2.9, 1.2.8, 1.2.7, 1.2.6, 1.2.5, 1.2.4, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.11, 1.1.10, 1.1.9, 1.1.8, 1.1.7, 1.1.6, 1.1.5, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.1.0-beta, 1.0.2, 1.0.1, 1.0.0, 0.9.9, 0.9.9-8, 0.9.9-7, 0.9.9-6, 0.9.9-5, 0.9.9-4, 0.9.9-3, 0.9.9-2, 0.9.9-1, 0.9.8, 0.9.8-7, 0.9.8-6, 0.9.8-5, 0.9.8-4, 0.9.8-3, 0.9.8-2, 0.9.8-1, 0.9.7, 0.9.7-3-5, 0.9.7-3-4, 0.9.7-3-3, 0.9.7-3-2, 0.9.7-3-1, 0.9.7-2-5, 0.9.7-2-4, 0.9.7-2-3, 0.9.7-2-2, 0.9.7-2-1, 0.9.7-3, 0.9.7-2, 0.9.7-1.4, 0.9.7-1.3, 0.9.7-1.2, 0.9.7-1.1, 0.9.7-1, 0.9.7-0, 0.9.6-23, 0.9.6-22, 0.9.6-21, 0.9.6-20, 0.9.6-19, 0.9.6-18, 0.9.6-17, 0.9.6-16, 0.9.6-15, 0.9.6-14, 0.9.6-13, 0.9.6-12, 0.9.6-11, 0.9.6-10, 0.9.6-9, 0.9.6-8, 0.9.6-7, 0.9.4, 0.9.4-4, 0.9.3, 0.9.2, 0.9.1
+1897 error If you need help, you may report this error at:
+1897 error     <https://github.com/npm/npm/issues>
+1898 verbose exit [ 1, true ]
